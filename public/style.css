@@ -2036,7 +2036,7 @@ body:not(.top_panel_fixed) .top_panel_position_over .top_panel_bottom {
 }
 
 .menu_main_nav > li ul {
-	width:190px;
+	width: 250px;;
 	padding: 0.75em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

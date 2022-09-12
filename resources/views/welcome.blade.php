@@ -162,18 +162,18 @@
                     itemscope itemtype="//schema.org/Article">
                     <section class="post_content" itemprop="articleBody">
                         <div class="vc_row wpb_row vc_row-fluid inverse_colors">
-                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="wpb_column vc_column_container vc_col-sm-12 ">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper add_space">
                                         <div class="columns_wrap sc_columns columns_nofluid sc_columns_count_4 banners_section margin_top_large margin_bottom_large"
                                             data-equal-height=".sc_column_item">
 
-                                            <div class="container add_space">
+                                            <div class="container add_space ">
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-3 ">
                                                         <div class="sc_section aligncenter"
                                                             style="background-image:url('images/front_end/home_page/bg_feature1.jpg');background-repeat:no-repeat;background-size:cover;height:318px;">
-                                                            <a class="sc_section_link" href="/about/">
+                                                            <a class="sc_section_link" href="javascript:void(0)">
                                                                 <div class="sc_section_inner">
                                                                     <div class="sc_section_overlay" style="">
                                                                         <div class="sc_section_content padding_on"
@@ -199,7 +199,7 @@
 
                                                         <div class="sc_section aligncenter"
                                                             style="background-image:url('images/front_end/home_page/bg_feature2.jpg');background-repeat:no-repeat;background-size:cover;height:318px;">
-                                                            <a class="sc_section_link" href="/about/">
+                                                            <a class="sc_section_link" href="javascript:void(0)">
                                                                 <div class="sc_section_inner">
                                                                     <div class="sc_section_overlay" style="">
                                                                         <div class="sc_section_content padding_on"
@@ -224,7 +224,7 @@
 
                                                         <div class="sc_section aligncenter"
                                                             style="background-image:url('images/front_end/home_page/bg_feature3.jpg');background-repeat:no-repeat;background-size:cover;height:318px;">
-                                                            <a class="sc_section_link" href="/about/">
+                                                            <a class="sc_section_link" href="javascript:void(0)">
                                                                 <div class="sc_section_inner">
                                                                     <div class="sc_section_overlay" style="">
                                                                         <div class="sc_section_content padding_on"
@@ -250,7 +250,7 @@
 
                                                         <div class="sc_section aligncenter"
                                                             style="background-image:url('images/front_end/home_page/bg_feature4.jpg');background-repeat:no-repeat;background-size:cover;height:318px;">
-                                                            <a class="sc_section_link" href="/about/">
+                                                            <a class="sc_section_link" href="javascript:void(0)">
                                                                 <div class="sc_section_inner">
                                                                     <div class="sc_section_overlay" style="">
                                                                         <div class="sc_section_content padding_on"
@@ -287,11 +287,12 @@
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper add_space">
 
-                                        <div class="sc_section margin_top_large margin_bottom_large">
-                                            <div class="sc_section_inner">
-                                                <h6 class="sc_section_subtitle sc_item_subtitle">welcome</h6>
+                                        <div class="sc_section margin_top_large margin_bottom_large ">
+                                            <div class="sc_section_inner ">
+                                                <h6 class="sc_section_subtitle sc_item_subtitle">Welcome</h6>
                                                 <h2 class="sc_section_title sc_item_title sc_item_title_without_descr">
-                                                    Seafood Company</h2>
+                                                    {{ COMPANY_NAME }}
+                                                </h2>
                                                 <div class="sc_section_content_wrap">
                                                     <div class="sc_promo sc_promo_size_large">
                                                         <div class="sc_promo_inner">
@@ -305,13 +306,12 @@
                                                                         class="sc_promo_title sc_item_title sc_item_title_with_descr">
                                                                         Our Seafood</h2>
                                                                     <div class="sc_promo_descr sc_item_descr">
-                                                                        Fish markets range in size from small
-                                                                        fish stalls, such as the one in the
-                                                                        photo at the right, to the great Tsukiji
-                                                                        fish market in Tokyo, turning over about
-                                                                        660,000 tonnes a year. The term can
-                                                                        refer to the process.</div>
-                                                                    <div class="sc_promo_button sc_item_button">
+                                                                        With expertise and strong relationships with the
+                                                                        vendors we built over the years, Aljunaid Seafood,
+                                                                        Mr. Parvez Jagirdar(Proprietor) has established a
+                                                                        strong foothold in the Indian marke
+                                                                    </div>
+                                                                    <div class="sc_promo_button sc_item_button hidden">
                                                                         <a href="/recipes/"
                                                                             class="sc_button sc_button_square sc_button_style_border sc_button_size_small">learn
                                                                             more</a>
@@ -343,7 +343,7 @@
                                                         seafood, delivered daily to our dock, prepared to your
                                                         liking. Our focus is on serving the absolute freshest
                                                         fish and seafood.</div>
-                                                    <div class="sc_intro_buttons sc_item_buttons">
+                                                    <div class="sc_intro_buttons sc_item_buttons hidden">
                                                         <div class="sc_intro_button sc_item_button"><a href="/shop/"
                                                                 class="sc_button sc_button_square sc_button_style_filled sc_button_size_medium">SHOP
                                                                 NOW</a></div>
@@ -365,7 +365,7 @@
                                             <div id="sc_services_1077200349"
                                                 class="sc_services sc_services_style_services-1 sc_services_type_images  margin_top_large margin_bottom_medium"
                                                 style="width:100%;">
-                                                <h6 class="sc_services_subtitle sc_item_subtitle">about</h6>
+                                                <h6 class="sc_services_subtitle sc_item_subtitle">About</h6>
                                                 <h2 class="sc_services_title sc_item_title sc_item_title_without_descr">
                                                     Our Advantages</h2>
                                                 <div class="sc_columns columns_wrap">
@@ -493,12 +493,10 @@
                                         <div id="sc_googlemap_440941345_wrap" class="sc_googlemap_wrap">
                                             <div id="sc_googlemap_440941345" class="sc_googlemap"
                                                 style="width:100%;height:398px;" data-zoom="11" data-style="inverse">
-                                                <iframe
-                                                    src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=11&q=Brooklyn%2C+NY"
-                                                    scrolling="no" marginheight="0" marginwidth="0" frameborder="0"
-                                                    aria-label=""></iframe>
+                                                <iframe src="{{ CONTACT_MAP }}" scrolling="no" marginheight="0"
+                                                    marginwidth="0" frameborder="0" aria-label=""></iframe>
                                             </div>
-                                            <div class="sc_googlemap_content">
+                                            <div class="sc_googlemap_content hidden">
                                                 <div class="sc_section"
                                                     style="color:#ffffff;background-image:url('images/front_end/home_page/map_bg.webp');background-repeat:no-repeat;background-size:cover;">
                                                     <div class="sc_section_inner">
@@ -536,7 +534,7 @@
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
                         <div data-vc-full-width="true" data-vc-full-width-init="false"
-                            class="vc_row wpb_row vc_row-fluid vc_custom_1473056086908 vc_row-has-fill">
+                            class="vc_row wpb_row vc_row-fluid vc_custom_1473056086908 vc_row-has-fill hidden">
                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper add_space">
@@ -937,7 +935,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="sc_section_button sc_item_button">
+                                                <div class="sc_section_button sc_item_button hidden">
                                                     <a href="/shop/"
                                                         class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">
                                                         view more products
@@ -982,9 +980,11 @@
                                                     shrimp dip, blackened grouper salad, fried
                                                     shrimps and octopus.</div>
                                                 <div class="sc_intro_buttons sc_item_buttons">
-                                                    <div class="sc_intro_button sc_item_button"><a href="/about/"
+                                                    <div class="sc_intro_button sc_item_button">
+                                                        <a href="javascript:void(0)"
                                                             class="sc_button sc_button_square sc_button_style_filled sc_button_size_medium">learn
-                                                            more</a></div>
+                                                            more</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1002,7 +1002,7 @@
 
                                         <div class="sc_section margin_top_large margin_bottom_large aligncenter">
                                             <div class="sc_section_inner">
-                                                <h6 class="sc_section_subtitle sc_item_subtitle">products</h6>
+                                                <h6 class="sc_section_subtitle sc_item_subtitle" style="padding-top: 20px">products</h6>
                                                 <h2 class="sc_section_title sc_item_title sc_item_title_without_descr">
                                                     Featured Items</h2>
                                                 <div class="sc_section_content_wrap">
@@ -1027,12 +1027,14 @@
                                                                         </h3>
                                                                         <span class="price"><span
                                                                                 class="woocommerce-Price-amount amount"><bdi><span
-                                                                                        class="woocommerce-Price-currencySymbol">&#8377;</span>25.00</bdi></span></span>
+                                                                                        class="woocommerce-Price-currencySymbol">&#8377;</span>
+                                                                                    XXXX
+                                                                                </bdi></span></span>
                                                                         <a href="?add-to-cart=137" data-quantity="1"
                                                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
                                                                             data-product_id="137" data-product_sku=""
                                                                             aria-label="Add &ldquo;Salmon&rdquo; to your cart"
-                                                                            rel="nofollow">Add to cart</a>
+                                                                            rel="nofollow">On Whatsapp</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -1054,12 +1056,14 @@
                                                                         </h3>
                                                                         <span class="price"><span
                                                                                 class="woocommerce-Price-amount amount"><bdi><span
-                                                                                        class="woocommerce-Price-currencySymbol">&#8377;</span>19.00</bdi></span></span>
+                                                                                        class="woocommerce-Price-currencySymbol">&#8377;</span>
+                                                                                    XXXX
+                                                                                </bdi></span></span>
                                                                         <a href="?add-to-cart=147" data-quantity="1"
                                                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
                                                                             data-product_id="147" data-product_sku=""
                                                                             aria-label="Add &ldquo;Tilapia&rdquo; to your cart"
-                                                                            rel="nofollow">Add to cart</a>
+                                                                            rel="nofollow">On Whatsapp</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -1080,13 +1084,17 @@
                                                                         <h3><a href="/product/shrimp/">Shrimp</a>
                                                                         </h3>
                                                                         <span class="price"><span
-                                                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                                                        class="woocommerce-Price-currencySymbol">&#8377;</span>21.00</bdi></span></span>
+                                                                                class="woocommerce-Price-amount amount">
+                                                                                <bdi><span
+                                                                                        class="woocommerce-Price-currencySymbol">&#8377;</span>
+                                                                                    XXXX
+                                                                                </bdi>
+                                                                            </span></span>
                                                                         <a href="?add-to-cart=148" data-quantity="1"
                                                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
                                                                             data-product_id="148" data-product_sku=""
                                                                             aria-label="Add &ldquo;Shrimp&rdquo; to your cart"
-                                                                            rel="nofollow">Add to cart</a>
+                                                                            rel="nofollow">On Whatsapp</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -1109,10 +1117,11 @@
                                                                         <span class="price">
                                                                             <span class="woocommerce-Price-amount amount">
                                                                                 <bdi>
-                                                                                    <span class="woocommerce-Price-currencySymbol">
+                                                                                    <span
+                                                                                        class="woocommerce-Price-currencySymbol">
                                                                                         &#8377;
                                                                                     </span>
-                                                                                    18.00
+                                                                                    XXXX
                                                                                 </bdi>
                                                                             </span>
                                                                         </span>
@@ -1123,18 +1132,19 @@
                                                                             class="button product_type_simple add_to_cart_button ajax_add_to_cart"
                                                                             data-product_id="149" data-product_sku=""
                                                                             aria-label="Add &ldquo;Snapper&rdquo; to your cart"
-                                                                            rel="nofollow">on Whatsapp</a>
+                                                                            rel="nofollow">On Whatsapp</a>
                                                                     </div>
                                                                 </div>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="sc_section_button sc_item_button">
+                                                <div class="sc_section_button sc_item_button"
+                                                    style="padding-bottom: 20px">
 
                                                     <div class="sc_socials_item">
                                                         <a href="{{ ADMIN_WHATSAPP_LINK_WITH_MSG }}"
-                                                            class="sc_button sc_button_square sc_button_style_filled sc_button_size_small social_icons social_pin">
+                                                            class="sc_button sc_button_square sc_button_style_filled sc_button_size_small social_icons social_pin ">
                                                             Order now on Whatsapp
                                                             {{-- <span class="icon-pin"></span> --}}
                                                         </a>
@@ -1150,7 +1160,7 @@
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
                         <div data-vc-full-width="true" data-vc-full-width-init="false"
-                            class="vc_row wpb_row vc_row-fluid vc_custom_1472283367687 vc_row-has-fill inverse_colors">
+                            class="vc_row wpb_row vc_row-fluid vc_custom_1472283367687 vc_row-has-fill inverse_colors hidden">
                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper add_space">
@@ -1165,7 +1175,7 @@
                                                     <div class="sc_video_player">
                                                         <div class="sc_video_frame sc_video_play_button hover_icon hover_icon_play"
                                                             data-width="100%" data-height="659"
-                                                            data-video="&lt;iframe class=&quot;video_frame&quot; src=&quot;https://player.vimeo.com/video/85992998?autoplay=1&quot; width=&quot;100%&quot; height=&quot;659&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;webkitAllowFullScreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; allowFullScreen=&quot;allowFullScreen&quot;&gt;&lt;/iframe&gt;"
+                                                            data-video="&lt;iframe class=&quot;video_frame&quot; src=&quot;https://pcccccclayer.vimeo.com/video/85992998?autoplay=1&quot; width=&quot;100%&quot; height=&quot;659&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;webkitAllowFullScreen&quot; mozallowfullscreen=&quot;mozallowfullscreen&quot; allowFullScreen=&quot;allowFullScreen&quot;&gt;&lt;/iframe&gt;"
                                                             style="width:100%;"><img alt="img"
                                                                 src="{{ asset('images/front_end/home_page/bg_video.jpg') }}">
                                                         </div>
@@ -1192,7 +1202,7 @@
                             </div>
                         </div>
                         <div class="vc_row-full-width vc_clearfix"></div>
-                        <div class="vc_row wpb_row vc_row-fluid">
+                        <div class="vc_row wpb_row vc_row-fluid hidden">
                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper add_space">
@@ -1326,85 +1336,71 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div data-vc-full-width="true" data-vc-full-width-init="false"
                             class="vc_row wpb_row vc_row-fluid vc_custom_1471941903248 vc_row-has-fill">
-                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="wpb_column vc_column_container vc_col-sm-12 ">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper add_space">
 
                                         <div id="sc_clients_114209017_wrap" class="sc_clients_wrap">
                                             <div id="sc_clients_114209017"
-                                                class="sc_clients sc_clients_style_clients-1  margin_top_medium margin_bottom_small"
+                                                class="sc_clients sc_clients_style_clients-1  margin_top_medium margin_bottom_small "
                                                 style="width:100%;">
-                                                <div class="sc_slider_swiper swiper-slider-container sc_slider_nopagination sc_slider_nocontrols"
+                                                <div class="sc_slider_swiper swiper-slider-container sc_slider_nopagination sc_slider_nocontrols "
                                                     data-interval="9581" data-slides-per-view="5"
                                                     data-slides-min-width="100">
-                                                    <div class="slides swiper-wrapper">
-                                                        <div class="swiper-slide" data-style="width:100%;"
-                                                            style="width:100%;">
-                                                            <div id="sc_clients_114209017_1"
-                                                                class="sc_clients_item sc_clients_item_1 odd first">
-                                                                <div class="sc_client_image"><img class="wp-post-image"
-                                                                        alt="Client 5"
-                                                                        src="{{ asset('images/front_end/home_page/client1.webp') }}">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide" data-style="width:100%;"
-                                                            style="width:100%;">
-                                                            <div id="sc_clients_114209017_2"
-                                                                class="sc_clients_item sc_clients_item_2 even">
-                                                                <div class="sc_client_image"><img class="wp-post-image"
-                                                                        alt="Client 4"
-                                                                        src="{{ asset('images/front_end/home_page/client2.webp') }}>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide"
-                                                                        data-style="width:100%;" style="width:100%;">
-                                                                    <div id="sc_clients_114209017_3"
-                                                                        class="sc_clients_item sc_clients_item_3 odd">
-                                                                        <div class="sc_client_image"><img
-                                                                                class="wp-post-image" alt="Client 3"
-                                                                                src="{{ asset('images/front_end/home_page/client3.webp') }}">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="swiper-slide" data-style="width:100%;"
-                                                                    style="width:100%;">
-                                                                    <div id="sc_clients_114209017_4"
-                                                                        class="sc_clients_item sc_clients_item_4 even">
-                                                                        <div class="sc_client_image"><img
-                                                                                class="wp-post-image" alt="Client 2"
-                                                                                src="{{ asset('images/front_end/home_page/client4.webp') }}">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="swiper-slide" data-style="width:100%;"
-                                                                    style="width:100%;">
-                                                                    <div id="sc_clients_114209017_5"
-                                                                        class="sc_clients_item sc_clients_item_5 odd">
-                                                                        <div class="sc_client_image"><img
-                                                                                class="wp-post-image" alt="Client 1"
-                                                                                src="{{ asset('images/front_end/home_page/client5.webp') }}">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="sc_slider_controls_wrap"><a class="sc_slider_prev"
-                                                                    href="#"></a><a class="sc_slider_next"
-                                                                    href="#"></a>
-                                                            </div>
-                                                            <div class="sc_slider_pagination_wrap"></div>
-                                                        </div>
-                                                    </div><!-- /.sc_clients -->
-                                                </div><!-- /.sc_clients_wrap -->
+                                                    <div class="slides swiper-wrapper client_slider">
 
-                                            </div>
-                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_client_image silder_space">
+                                                                <img alt="Client 5" title="sajid tow"
+                                                                    src="{{ asset('images/front_end/home_page/client1.webp') }}">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_client_image silder_space">
+                                                                <img alt="Client 5" title="sajid tow"
+                                                                    src="{{ asset('images/front_end/home_page/client2.webp') }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_client_image silder_space">
+                                                                <img alt="Client 5" title="sajid tow"
+                                                                    src="{{ asset('images/front_end/home_page/client3.webp') }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_client_image silder_space">
+                                                                <img alt="Client 5" title="sajid tow"
+                                                                    src="{{ asset('images/front_end/home_page/client4.webp') }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_client_image silder_space">
+                                                                <img alt="Client 5" title="sajid tow"
+                                                                    src="{{ asset('images/front_end/home_page/client5.webp') }}">
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="sc_slider_controls_wrap"><a class="sc_slider_prev"
+                                                            href="#"></a><a class="sc_slider_next"
+                                                            href="#"></a>
+                                                    </div>
+                                                    <div class="sc_slider_pagination_wrap"></div>
+                                                </div>
+                                            </div><!-- /.sc_clients -->
+                                        </div><!-- /.sc_clients_wrap -->
+
                                     </div>
                                 </div>
-                                <div class="vc_row-full-width vc_clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="vc_row-full-width vc_clearfix"></div>
 
                     </section> <!-- </section> class="post_content" itemprop="articleBody"> -->
                 </article>

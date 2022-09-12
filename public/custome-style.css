@@ -2,3 +2,23 @@
     margin-top: 2px;
     margin-bottom: 5px;
 }
+
+.hidden {
+    display: none;
+}
+
+.silder_space {
+    padding: 50px 0 50px 0 !important;
+}
+
+.pointer_none {
+    pointer-events: none;
+}
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.top_bottom_space {
+    padding: 50px 0 0 50px !important;
+}

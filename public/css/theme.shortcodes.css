@@ -957,6 +957,7 @@ button.sc_button_size_large.aligncenter,
 }
 .sc_clients .sc_client_image {
 	text-align:center;
+	padding: 50px;
 }
 .sc_clients_style_clients-2 .sc_client_hover {
 	text-align:center;

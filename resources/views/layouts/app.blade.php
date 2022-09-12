@@ -11,6 +11,7 @@
 
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{{ asset('css/fontello/font/font-icons/css/trx_demo_icons.css') }}" id='trx_demo_icons-css'
         rel="stylesheet" type="text/css" media='all' />
     <link href="{{ asset('css/font-icons/css/animation.css') }}" id='trx_demo_icons_animation-css' rel="stylesheet"
@@ -53,6 +54,27 @@
     <link rel="icon" href="{{ asset('images/front_end/favicon.ico') }}" sizes="192x192" />
     <link rel="apple-touch-icon" href="{{ asset('images/front_end/favicon.ico') }}" />
     <meta name="msapplication-TileImage" content="{{ asset('images/front_end/favicon.ico') }}" />
+
+    <style>
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
 
 </head>
 
@@ -237,8 +259,7 @@
                                         <h5 class="widget_title">About Us</h5>
                                         <div class="textwidget">
                                             <p>
-                                                For the best food, drinks and service you can choose our restaurant. We
-                                                guarantee you the freshest seafood prepared to your liking.
+                                                {{COMPANY_NAME}} Company Known For Seafood By Customers Around The World. We Have Been In The Seafood Industry Since 2016. We Are In The Business Of Seafood Sourcing, That Is Sourcing Various Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Vietnam, China, Thailand, Etc.
                                             </p>
                                         </div>
 
@@ -247,7 +268,7 @@
                                     <div class="col-md-3">
 
                                         <h5 class="widget_title">Links</h5>
-                                        <div class="menu-footer-menu-container">
+                                        <div class="menu-footer-menu-container hidden">
                                             <ul id="menu-footer-menu" class="menu">
                                                 <li id="menu-item-297"
                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-297">
@@ -283,10 +304,8 @@
 
                                         <h5 class="widget_title">Contact Us</h5>
                                         <div class="textwidget">
-                                            <p>Call us at
-                                                <a href="tel:8001234567">(800)-123-4567</a><br>
-                                                123 New Lenox, Chicago, IL<br> <a
-                                                    href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                            <p>
+                                                {{CONTACT_ADDRESS}}
                                             </p>
                                         </div>
 
@@ -319,7 +338,10 @@
     </div> <!-- /.body_wrap -->
 
 
-    <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
+    {{-- <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a> --}}
+    <a href="{{ADMIN_WHATSAPP_LINK}}" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <div class="custom_html_section"></div>
     <script type="text/javascript">
