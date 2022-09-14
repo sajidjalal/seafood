@@ -42,8 +42,8 @@
                 <div class="organic-about-text">
                     <h4 style="font-size: 32px;">who we are</h4>
                     <p>
-                        Aljunaid Seafood Company Known For Seafood By Customers Around The World. We Have Been In The
-                        Seafood Industry Since 2016. We Are In The Business Of Seafood Sourcing, That Is Sourcing arious
+                        {{COMPANY_NAME}} Company Known For Seafood By Customers Around The World. We Have Been In The
+                        Seafood Industry Since 2022. We Are In The Business Of Seafood Sourcing, That Is Sourcing arious
                         Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Vietnam, China, Thailand, Etc.
                         <br>
                         <br>
@@ -210,7 +210,7 @@
                             <div>
                                 <h3 class="text-white fs-5">Swati Verma</h3>
                                 <p class="fs-6 text-white">
-                                    Aljunaid Seafood is our partner and we are quite happy with the work. I see a great
+                                    {{COMPANY_NAME}} is our partner and we are quite happy with the work. I see a great
                                     future for this company. Keep making happy clients.
                                 </p>
                             </div>
@@ -228,7 +228,7 @@
                             <div>
                                 <h3 class="text-white fs-5">Rakesh Shukla</h3>
                                 <p class="fs-6 text-white">
-                                    Aljunaid Seafood provides a high standard of service. They are quick to address
+                                    {{COMPANY_NAME}} provides a high standard of service. They are quick to address
                                     questions and concerns and produce quality work. We look forward to working with them in
                                     the future.
                                 </p>

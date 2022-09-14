@@ -307,7 +307,7 @@
                                                                         Our Seafood</h2>
                                                                     <div class="sc_promo_descr sc_item_descr">
                                                                         With expertise and strong relationships with the
-                                                                        vendors we built over the years, Aljunaid Seafood,
+                                                                        vendors we built over the years, {{COMPANY_NAME}},
                                                                         Mr. Parvez Jagirdar(Proprietor) has established a
                                                                         strong foothold in the Indian marke
                                                                     </div>

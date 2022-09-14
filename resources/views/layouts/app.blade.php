@@ -259,7 +259,7 @@
                                         <h5 class="widget_title">About Us</h5>
                                         <div class="textwidget">
                                             <p>
-                                                {{COMPANY_NAME}} Company Known For Seafood By Customers Around The World. We Have Been In The Seafood Industry Since 2016. We Are In The Business Of Seafood Sourcing, That Is Sourcing Various Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Vietnam, China, Thailand, Etc.
+                                                {{COMPANY_NAME}} Company Known For Seafood By Customers Around The World. We Have Been In The Seafood Industry Since 2022. We Are In The Business Of Seafood Sourcing, That Is Sourcing Various Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Vietnam, China, Thailand, Etc.
                                             </p>
                                         </div>
 
