@@ -23,7 +23,7 @@
 
                     @foreach ($product_master as $value)
                         <li class="cat-item">
-                            <a href="/{{ $value->id }}">
+                            <a href="{{ route('product') }}">
                                 {{ $value->name }}
                             </a>
                         </li>
