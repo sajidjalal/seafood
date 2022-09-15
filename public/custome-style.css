@@ -22,3 +22,25 @@
 .top_bottom_space {
     padding: 50px 0 0 50px !important;
 }
+
+.product-widget {
+    padding: 3%;
+    background-color: #f5f5f5;
+}
+
+ul.product-categories {
+    margin-left: 13%;
+    font-size: large;
+}
+
+.widget_title {
+    margin-top: 0;
+    font-size: larger;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+}
+
+body {
+    font-family: Montserrat, sans-serif !important;
+}

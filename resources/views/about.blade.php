@@ -44,7 +44,7 @@
                     <p>
                         {{COMPANY_NAME}} Company Known For Seafood By Customers Around The World. We Have Been In The
                         Seafood Industry Since 2022. We Are In The Business Of Seafood Sourcing, That Is Sourcing arious
-                        Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Vietnam, China, Thailand, Etc.
+                        Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Middle East, Vietnam, China, Thailand, Etc.
                         <br>
                         <br>
                         We Source To The Global Market A Wide Range Of Seafood From India. We Understand And Fulfill

@@ -307,7 +307,8 @@
                                                                         Our Seafood</h2>
                                                                     <div class="sc_promo_descr sc_item_descr">
                                                                         With expertise and strong relationships with the
-                                                                        vendors we built over the years, {{COMPANY_NAME}},
+                                                                        vendors we built over the years,
+                                                                        {{ COMPANY_NAME }},
                                                                         Mr. Parvez Jagirdar(Proprietor) has established a
                                                                         strong foothold in the Indian marke
                                                                     </div>
@@ -1002,7 +1003,8 @@
 
                                         <div class="sc_section margin_top_large margin_bottom_large aligncenter">
                                             <div class="sc_section_inner">
-                                                <h6 class="sc_section_subtitle sc_item_subtitle" style="padding-top: 20px">products</h6>
+                                                <h6 class="sc_section_subtitle sc_item_subtitle"
+                                                    style="padding-top: 20px">products</h6>
                                                 <h2 class="sc_section_title sc_item_title sc_item_title_without_descr">
                                                     Featured Items</h2>
                                                 <div class="sc_section_content_wrap">
@@ -1074,10 +1076,9 @@
                                                                         <div class="post_thumb">
                                                                             <a class="hover_icon hover_icon_link"
                                                                                 href="/product/shrimp/">
-                                                                                <img width="540" height="496"
-                                                                                    src="{{ asset('images/front_end/home_page/09-540x496.jpg') }}"
-                                                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                                                    alt="" loading="lazy" /> </a>
+                                                                                <img width="540" height="496" src="{{ asset('images/front_end/home_page/09-540x496.jpg') }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy" />
+                                                                            </a>
+
                                                                         </div>
                                                                     </div>
                                                                     <div class="post_content">

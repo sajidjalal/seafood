@@ -32,12 +32,12 @@
         type='text/css' media='all' />
     <link href="{{ asset('css/responsive.css') }}" rel='stylesheet' id='seafood-company-responsive-style-css'
         type='text/css' media='all' />
+    <link href="{{ asset('custome-style.css') }}" rel='stylesheet' type='text/css' media='all' />
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 
     <script type='text/javascript' src='{{ asset('js/jquery/jquery.min.js') }}' id='jquery-core-js'></script>
     <script type='text/javascript' src='{{ asset('js/jquery/jquery-migrate.min.js') }}' id='jquery-migrate-js'></script>
@@ -259,7 +259,10 @@
                                         <h5 class="widget_title">About Us</h5>
                                         <div class="textwidget">
                                             <p>
-                                                {{COMPANY_NAME}} Company Known For Seafood By Customers Around The World. We Have Been In The Seafood Industry Since 2022. We Are In The Business Of Seafood Sourcing, That Is Sourcing Various Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Vietnam, China, Thailand, Etc.
+                                                {{ COMPANY_NAME }} Company Known For Seafood By Customers Around The
+                                                World. We Have Been In The Seafood Industry Since 2022. We Are In The
+                                                Business Of Seafood Sourcing, That Is Sourcing Various Fresh And Frozen
+                                                Sea Foods To Our Clients In Europe, USA, Middle East, Vietnam, China, Thailand, Etc.
                                             </p>
                                         </div>
 
@@ -305,7 +308,7 @@
                                         <h5 class="widget_title">Contact Us</h5>
                                         <div class="textwidget">
                                             <p>
-                                                {{CONTACT_ADDRESS}}
+                                                {{ CONTACT_ADDRESS }}
                                             </p>
                                         </div>
 
@@ -339,8 +342,8 @@
 
 
     {{-- <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a> --}}
-    <a href="{{ADMIN_WHATSAPP_LINK}}" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
+    <a href="{{ ADMIN_WHATSAPP_LINK }}" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
     </a>
 
     <div class="custom_html_section"></div>
