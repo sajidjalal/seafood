@@ -63,14 +63,14 @@
                 <div class="row mt-5 m-5 text-center">
                     <div class="row">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-md-9" style="margin-left: 7%;">
                                 <h3 class="text-left">
                                     RELATED PRODUCT
                                 </h3>
                             </div>
                             <div class="col-md-3">
                                 <!-- Controls -->
-                                <div class="controls pull-right hidden-xs">
+                                <div class="controls pull-right">
                                     <a class="left fa fa-chevron-left btn btn-primary" href="#carousel-example-generic"
                                         data-slide="prev">
                                     </a>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             @if ($show_silde)
                                 <div class="carousel-inner">
