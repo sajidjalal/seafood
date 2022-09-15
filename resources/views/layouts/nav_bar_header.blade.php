@@ -100,8 +100,8 @@
                                 <a href="#" class="popup_close"></a>
                                 <div class="form_wrap">
                                     <div>
-                                        <form action="/" method="post"
-                                            name="login_form" class="popup_form login_form">
+                                        <form action="/" method="post" name="login_form"
+                                            class="popup_form login_form">
                                             <input type="hidden" name="redirect_to"
                                                 value="https://seafood-company.themerex.net/">
                                             <div class="popup_form_field login_field iconed_field icon-user">
@@ -113,8 +113,7 @@
                                                     placeholder="Password">
                                             </div>
                                             <div class="popup_form_field remember_field">
-                                                <a href="/"
-                                                    class="forgot_password">Forgot password?</a>
+                                                <a href="/" class="forgot_password">Forgot password?</a>
                                                 <input type="checkbox" value="forever" id="rememberme"
                                                     name="rememberme">
                                                 <label for="rememberme">Remember me</label>
@@ -169,22 +168,22 @@
                                 <a href="/"> Home </a>
                             </li>
                             <li class="menu-item-has-children ">
-                                <a href="#">
+                                <a href="{{ route('product') }}">
                                     Products
                                 </a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#">
+                                        <a href="{{ route('product') }}">
                                             FROZEN FINFISH
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{ route('product') }}">
                                             FROZEN SHRIMPS
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{ route('product') }}">
                                             FROZEN SHELLFISH & CEPHALOPOD
                                         </a>
                                     </li>
@@ -208,9 +207,8 @@
     <div class="content_wrap">
         <div class="menu_button icon-menu"></div>
         <div class="logo">
-            <a href="/"><img
-                    src="https://seafood-company.themerex.net/wp-content/uploads/2016/08/logo.png" class="logo_main"
-                    alt="" width="293" height="128"></a>
+            <a href="/"><img src="https://seafood-company.themerex.net/wp-content/uploads/2016/08/logo.png"
+                    class="logo_main" alt="" width="293" height="128"></a>
         </div>
     </div>
     <div class="side_wrap">
@@ -223,22 +221,22 @@
                         <a href="/"> Home </a>
                     </li>
                     <li class="menu-item-has-children ">
-                        <a href="#">
+                        <a href="{{ route('product') }}">
                             Products
                         </a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="#">
+                                <a href="{{ route('product') }}">
                                     FROZEN FINFISH
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{ route('product') }}">
                                     FROZEN SHRIMPS
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{ route('product') }}">
                                     FROZEN SHELLFISH & CEPHALOPOD
                                 </a>
                             </li>
