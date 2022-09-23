@@ -26,7 +26,7 @@ class Controller extends BaseController
         return view('about', $data);
     }
 
-    public function contact_us()
+    public function contact_us_old()
     {
         $data['page_title'] = 'contact us of SeaFoods';
         return view('contact-us', $data);
@@ -66,7 +66,7 @@ class Controller extends BaseController
     {
         $data['page_title'] = 'View Product Deatils';
         $data['product_categories'] =  ProductCategoriesModel::where('id', $request->id)->first();
-        
+
         return view('view_product', $data);
     }
 
@@ -84,10 +84,44 @@ class Controller extends BaseController
         $data['page_title'] = 'Welcome to SeaFoods';
         return view('new_look.welcome', $data);
     }
-    
-    public function product()
+
+    public function products()
     {
-        $data['page_title'] = 'Product list';
+        $data['page_title'] = 'Products list';
         return view('new_look.product', $data);
+    }
+
+    public function about_us()
+    {
+        $data['page_title'] = 'About Us';
+        return view('new_look.about_us', $data);
+    }
+
+    public function contact_us()
+    {
+        $data['page_title'] = 'Contact Us';
+        return view('new_look.contact_us', $data);
+    }
+
+    public function services()
+    {
+        $data['page_title'] = 'Services Us';
+        return view('new_look.services', $data);
+    }
+
+    public function sourcing()
+    {
+        $data['page_title'] = 'Sourcing';
+        return view('new_look.sourcing', $data);
+    }
+    public function quality_control()
+    {
+        $data['page_title'] = 'Quality Control';
+        return view('new_look.quality-control', $data);
+    }
+    public function distribution()
+    {
+        $data['page_title'] = 'SUPPLY CHAIN MANAGEMENT';
+        return view('new_look.distribution', $data);
     }
 }

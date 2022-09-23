@@ -3,6 +3,7 @@ if (!defined('SCRIPT_VERSION')) {
 
     // MAIN
     define("COMPANY_NAME", 'Aiza Seafood');
+    define("COMPANY_FULL_NAME", 'Aiza Seafood Prv. Lmt.');
     define("SCRIPT_VERSION", (env('APP_ENV') == 'prod') ? '04:07:2022|2.1.1' : rand());
 
     // CONTACTS

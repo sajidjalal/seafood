@@ -56,7 +56,7 @@
     height:100vh;
     z-index: 0;
 }
-.q_slide:after{ position: absolute; content: ''; height: 253px; left: 0px; bottom: 0px; background-image: url(../../images/shape1.webp); 
+.q_slide:after{ position: absolute; content: ''; height: 253px; left: 0px; bottom: 0px; background-image: url(../../images/shape1.png); 
 background-position: center; background-repeat: no-repeat; z-index: 1; width: 100%; }
 
 .q_slide .q_slide-inner {

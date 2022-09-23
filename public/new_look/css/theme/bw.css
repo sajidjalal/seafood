@@ -253,7 +253,7 @@ header:after{position: absolute;content:'';width: 20%;height: 49px;right: 0px;bo
 .three-box .icon-qlt img{ line-height: 130px; }
 .three-box h3{ color: #1658a1; font-size: 26px; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
 .three-box p{ line-height: 26px; }
-footer{ float: left; width: 100%; padding-top: 120px; color: #fff; background-image: url(../../../images/bg2.jpg); position: relative; 
+footer{ float: left; width: 100%; padding-top: 120px; color: #fff; background-image: url(../../images/bg2.jpg); position: relative; 
 text-align: center; background-repeat: no-repeat; background-position:top center; background-size: cover; }
 footer:after{ position: absolute; content: ''; width: 100%; height: 100%; left: 0px; top: 0px; background-color: #00000061; opacity: .7; z-index: 1; }
 footer h5{position: relative;z-index: 2;font-size: 13px;margin-bottom: 6px;}

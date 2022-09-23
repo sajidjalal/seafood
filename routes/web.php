@@ -15,13 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Controller::class, 'index'])->name('index');
-Route::get('/about', [Controller::class, 'about'])->name('about');
-Route::get('/contact-us', [Controller::class, 'contact_us'])->name('contact-us');
-Route::get('/product', [Controller::class, 'product'])->name('product');
-Route::get('/product_new', [Controller::class, 'product_new'])->name('product');
-Route::get('/view-product/{id}', [Controller::class, 'view_product'])->name('view-product');
-Route::get('/test', [Controller::class, 'test'])->name('test');
+// Route::get('/about', [Controller::class, 'about'])->name('about');
+// Route::get('/contact-us', [Controller::class, 'contact_us'])->name('contact-us');
+// Route::get('/product', [Controller::class, 'product'])->name('product');
+// Route::get('/product_new', [Controller::class, 'product_new'])->name('product');
+// Route::get('/view-product/{id}', [Controller::class, 'view_product'])->name('view-product');
+// Route::get('/test', [Controller::class, 'test'])->name('test');
 
 
 Route::get('/home-new', [Controller::class, 'home_new'])->name('home-new');
-Route::get('/product', [Controller::class, 'product'])->name('product');
+Route::get('/about-us', [Controller::class, 'about_us'])->name('about-us');
+Route::get('/contact-us', [Controller::class, 'contact_us'])->name('contact-us');
+Route::get('/services', [Controller::class, 'services'])->name('services');
+Route::get('/products', [Controller::class, 'products'])->name('products');
+Route::get('/sourcing', [Controller::class, 'sourcing'])->name('sourcing');
+Route::get('/quality-control', [Controller::class, 'quality_control'])->name('quality-control');
+Route::get('/distribution', [Controller::class, 'distribution'])->name('distribution');
