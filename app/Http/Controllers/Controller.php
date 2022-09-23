@@ -32,7 +32,7 @@ class Controller extends BaseController
         return view('contact-us', $data);
     }
 
-    public function product()
+    public function product_old()
     {
         $data['page_title'] = 'Product list';
         $data['product_master'] =  ProductMasterModel::get();
@@ -45,6 +45,21 @@ class Controller extends BaseController
             $data['show_silde'] = true;
         }
         return view('product', $data);
+    }
+
+    public function product_new()
+    {
+        $data['page_title'] = 'Product list';
+        $data['product_master'] =  ProductMasterModel::get();
+        $data['product_categories'] =  ProductCategoriesModel::paginate(9);
+
+        $data['related_slide'] =  ProductCategoriesModel::inRandomOrder()->limit(6)->get();
+        $data['show_silde'] = false;
+
+        if (count($data['related_slide']) > 5) {
+            $data['show_silde'] = true;
+        }
+        return view('product_new', $data);
     }
 
     public function view_product(Request $request)
@@ -62,5 +77,17 @@ class Controller extends BaseController
         $data['product_categories'] =  ProductCategoriesModel::paginate(9);
 
         return view('test', $data);
+    }
+
+    public function home_new()
+    {
+        $data['page_title'] = 'Welcome to SeaFoods';
+        return view('new_look.welcome', $data);
+    }
+    
+    public function product()
+    {
+        $data['page_title'] = 'Product list';
+        return view('new_look.product', $data);
     }
 }

@@ -1132,7 +1132,7 @@ div.pp_woocommerce .pp_arrow_next, div.pp_woocommerce .pp_arrow_previous {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	background:url(../images/woo/shop-cat-bg-1.jpg) center center no-repeat;
+	background:url(../../images/woo/shop-cat-bg-1.jpg) center center no-repeat;
 	padding:1em;
 	overflow:hidden;
 }
@@ -1145,19 +1145,19 @@ div.pp_woocommerce .pp_arrow_next, div.pp_woocommerce .pp_arrow_previous {
 }
 
 .woocommerce ul.products li.product.product-category:nth-child(6n+2) .thumb_wrapper, .woocommerce-page ul.products li.product.product-category:nth-child(6n+2) .thumb_wrapper {
-	background:url(../images/woo/shop-cat-bg-2.jpg) center center no-repeat;
+	background:url(../../images/woo/shop-cat-bg-2.jpg) center center no-repeat;
 }
 .woocommerce ul.products li.product.product-category:nth-child(6n+3) .thumb_wrapper, .woocommerce-page ul.products li.product.product-category:nth-child(6n+3) .thumb_wrapper {
-	background:url(../images/woo/shop-cat-bg-3.jpg) center center no-repeat;
+	background:url(../../images/woo/shop-cat-bg-3.jpg) center center no-repeat;
 }
 .woocommerce ul.products li.product.product-category:nth-child(6n+4) .thumb_wrapper, .woocommerce-page ul.products li.product.product-category:nth-child(6n+4) .thumb_wrapper {
-	background:url(../images/woo/shop-cat-bg-4.jpg) center center no-repeat;
+	background:url(../../images/woo/shop-cat-bg-4.jpg) center center no-repeat;
 }
 .woocommerce ul.products li.product.product-category:nth-child(6n+5) .thumb_wrapper, .woocommerce-page ul.products li.product.product-category:nth-child(6n+5) .thumb_wrapper {
-	background:url(../images/woo/shop-cat-bg-5.jpg) center center no-repeat;
+	background:url(../../images/woo/shop-cat-bg-5.jpg) center center no-repeat;
 }
 .woocommerce ul.products li.product.product-category:nth-child(6n+6) .thumb_wrapper, .woocommerce-page ul.products li.product.product-category:nth-child(6n+6) .thumb_wrapper {
-	background:url(../images/woo/shop-cat-bg-6.jpg) center center no-repeat;
+	background:url(../../images/woo/shop-cat-bg-6.jpg) center center no-repeat;
 }
 .woocommerce ul.products li.product.product-category img, .woocommerce-page ul.products li.product.product-category img {
 	width:100%;

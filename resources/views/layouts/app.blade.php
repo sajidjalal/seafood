@@ -55,6 +55,19 @@
     <link rel="apple-touch-icon" href="{{ asset('images/front_end/favicon.ico') }}" />
     <meta name="msapplication-TileImage" content="{{ asset('images/front_end/favicon.ico') }}" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXX');
+    </script>
+
     <style>
         .float {
             position: fixed;
@@ -262,7 +275,8 @@
                                                 {{ COMPANY_NAME }} Company Known For Seafood By Customers Around The
                                                 World. We Have Been In The Seafood Industry Since 2022. We Are In The
                                                 Business Of Seafood Sourcing, That Is Sourcing Various Fresh And Frozen
-                                                Sea Foods To Our Clients In Europe, USA, Middle East, Vietnam, China, Thailand, Etc.
+                                                Sea Foods To Our Clients In Europe, USA, Middle East, Vietnam, China,
+                                                Thailand, Etc.
                                             </p>
                                         </div>
 
