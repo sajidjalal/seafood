@@ -18,11 +18,12 @@
             <div class="row">
                 <p></p>
                 <p></p>
-                <p class="font-17">Based on customer's request, BWG provide solutions for customs clearance, warehousing, and
-                    local delivery. We work closely with our clients to assess their unique supply chain requirements and
-                    find the right solutions. We strive for an uninterrupted movement of products in the supply chain for
-                    the customer to maintain the right inventory levels. We also provide Supply Chain Management support and
-                    solutions for Value added products, Private labels,Consumer packaged goods (CPG) etc. in GCC countries.
+                <p class="font-17">
+                    Based on customer's request, Aiza seafood provides solutions for customs clearance and warehousing. We
+                    work closely with our clients to assess their unique supply chain requirements and find the right
+                    solutions. We strive for an uninterrupted movement of products in the supply chain for the customer to
+                    maintain the right inventory levels. We also provide Supply Chain Management support and solutions for
+                    Value added products, Private labels, and Consumer packaged goods (CPG) etc.
                 </p>
             </div>
         </div>

@@ -1,22 +1,14 @@
 @extends('new_look.app')
-
-
 @section('content')
     <!-- banner -->
-    <div class="banner"
-        style="background-image: url(https://bluewatersllcdubai.com/wp-content/uploads/2022/03/products.jpg);">
+
+    <div class="banner" style="background-image: url(new_look/images/product/products.jpg);">
         <div class="banner-caption">
             <h2>Products</h2>
             <!-- <h4><a href="https://bluewatersllcdubai.com/">Home</a> | <span>Products</span></h4>    -->
         </div>
     </div>
     <!-- /banner -->
-
-
-
-
-
-
     <!-- intro -->
     <section class="pad">
         <div class="container">
@@ -24,34 +16,23 @@
             <div class="tab-container">
                 <div id="verticalTab">
                     <ul class="resp-tabs-list">
-
-
                         <li>Crustaceans</li>
-
                         <li>Cephalopods</li>
-
                         <li>Tropical Fishes</li>
-
                         <li>Cold Water Fishes</li>
-
                         <li>Specialty Products</li>
                     </ul>
                     <!-- resp-tabs-container -->
                     <div class="resp-tabs-container">
-
-
                         <div>
                             <div class="row">
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/1.Vannamei-Head-On-Shell-On-HOSO.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img
+                                                src="{{ asset('new_look/images/product/1.Vannamei-Head-On-Shell-On-HOSO.jpg') }}"alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Vannamei Head On Shell On (HOSO)</h3>
@@ -60,30 +41,24 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Litopeaneaus vannamei</h4>
                                                     <h4><b>Size:</b> 10/20, 20/30, 30/40, 40/50, 50/60, 60/70,
-                                                        70/80, 80/110, 110/130</h4>
+                                                        70/80, 80/110, 110/130
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg, 6 x 2 kg (in poly bag or duplex
-                                                        box)</h4>
+                                                        box)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/2.Vannamei-Peeled-Deveined-Tail-On-PDTO.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/2.Vannamei-Peeled-Deveined-Tail-On-PDTO.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Vannamei Peeled &#038; Deveined Tail On (PDTO)</h3>
@@ -92,30 +67,24 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Litopeaneaus vannamei</h4>
                                                     <h4><b>Size:</b> 8/12, 11/15, 16/20, 21/25, 26/30, 31/40, 41/50,
-                                                        51/60, 61/70, 71/90</h4>
+                                                        51/60, 61/70, 71/90
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg bag, 5 x 2 kg bag (with or without
-                                                        rider)</h4>
+                                                        rider)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/3.Vannamei-Peeled-Deveined-Tail-Off-PD.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/3.Vannamei-Peeled-Deveined-Tail-Off-PD.jpg') }}"
+                                                alt="" srcset="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Vannamei Peeled &#038; Deveined Tail Off (PD)</h3>
@@ -124,30 +93,25 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Litopeaneaus vannamei</h4>
                                                     <h4><b>Size:</b> 8/12, 11/15, 16/20, 21/25, 26/30, 31/40, 41/50,
-                                                        51/60, 61/70, 71/90</h4>
+                                                        51/60, 61/70, 71/90
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg bag, 5 x 2 kg bag (with or without
-                                                        rider)</h4>
+                                                        rider)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/4.Vannamei-Peeled-Deveined-Tail-On-Cooked-PDTO-Cooked.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/4.Vannamei-Peeled-Deveined-Tail-On-Cooked-PDTO-Cooked.jpg') }}"
+                                                alt="" srcset="">
+
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Vannamei Peeled &#038; Deveined Tail On Cooked (PDTO Cooked)
@@ -157,32 +121,26 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Litopeaneaus vannamei</h4>
                                                     <h4><b>Size:</b> 8/12, 11/15, 16/20, 21/25, 26/30, 31/40, 41/50,
-                                                        51/60, 61/70, 71/90</h4>
+                                                        51/60, 61/70, 71/90
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg bag, 5 x 2 kg bag (with or without
-                                                        rider)</h4>
+                                                        rider)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/5.Head-On-Shell-On-Black-Tiger-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/5.Head-On-Shell-On-Black-Tiger-2.jpg') }}"
+                                                alt="" srcset="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Head On Shell On Black Tiger</h3>
@@ -191,30 +149,24 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Peneaus monodon</h4>
                                                     <h4><b>Size:</b> U/5, U/7, U/10, U/15, 10/20, 20/30, 30/40,
-                                                        40/50</h4>
+                                                        40/50
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg, 6 x 2 kg (in poly bag or duplex
-                                                        box)</h4>
+                                                        box)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/6.Peeled-Deveined-Tail-On-Black-Tiger.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/6.Peeled-Deveined-Tail-On-Black-Tiger.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Peeled &#038; Deveined Tail On Black Tiger</h3>
@@ -223,30 +175,24 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Peneaus monodon</h4>
                                                     <h4><b>Size:</b> 8/12, 11/15, 16/20, 21/25, 26/30, 31/40, 41/50,
-                                                        51/60, 61/70, 71/90</h4>
+                                                        51/60, 61/70, 71/90
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg bag, 5 x 2 kg bag (with or without
-                                                        rider)</h4>
+                                                        rider)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/7.Head-On-Sea-Tiger.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/7.Head-On-Sea-Tiger.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Head On Sea Tiger</h3>
@@ -255,30 +201,24 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Peneaus monodon</h4>
                                                     <h4><b>Size:</b> U/5, U/7, U/10, U/15, 10/20, 20/30, 30/40,
-                                                        40/50</h4>
+                                                        40/50
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 x 1 kg, 6 x 2 kg (in poly bag or duplex
-                                                        box)</h4>
+                                                        box)
+                                                    </h4>
                                                     <h4><b>Origin:</b> India / Vietnam</h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/Rock-Lobster.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/Rock-Lobster.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Rock Lobster</h3>
@@ -287,7 +227,8 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Panulirus spp.</h4>
                                                     <h4><b>Size:</b> 200/300, 300/400. 400/500, 500/600. 600/700,
-                                                        700/800, 800/900, 900/up</h4>
+                                                        700/800, 800/900, 900/up
+                                                    </h4>
                                                     <h4><b>Packing:</b> 1 x 10kg</h4>
                                                     <h4><b>Origin:</b> India/ Oman</h4>
                                                 </div>
@@ -295,23 +236,15 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/9.Rock-Lobster-Tail.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/9.Rock-Lobster-Tail.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Rock Lobster Tail</h3>
@@ -327,21 +260,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/10.Sand-Lobster.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/10.Sand-Lobster.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Sand Lobster</h3>
@@ -350,7 +275,8 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Thenus spp.</h4>
                                                     <h4><b>Size:</b> 200/300, 300/400. 400/500, 500/600. 600/700,
-                                                        700/800, 800/900, 900/up</h4>
+                                                        700/800, 800/900, 900/up
+                                                    </h4>
                                                     <h4><b>Packing:</b> 1 x 10kg</h4>
                                                     <h4><b>Origin:</b> India/ Oman</h4>
                                                 </div>
@@ -358,13 +284,7 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
                                 </div>
                             </div>
                             <!-- /tab 01 -->
@@ -372,15 +292,12 @@
                         <div>
                             <div class="row">
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/11.Squid-Whole.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/11.Squid-Whole.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Squid Whole</h3>
@@ -396,21 +313,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/12.Squid-Whole-Cleaned.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/12.Squid-Whole-Cleaned.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Squid Whole Cleaned</h3>
@@ -426,21 +335,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/13.Squid-Tubes-change-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/13.Squid-Tubes-change-2.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Squid Tubes</h3>
@@ -457,21 +358,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/14.Squid-Rings.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/14.Squid-Rings.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Squid Rings</h3>
@@ -488,23 +381,15 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/15.Cuttlefish-Whole-Cleaned.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/15.Cuttlefish-Whole-Cleaned.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Cuttlefish Whole Cleaned</h3>
@@ -520,21 +405,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/baby.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/baby.jpg') }}" alt="">
+
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Baby Octopus Cleaned</h3>
@@ -550,13 +427,7 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
                                 </div>
                             </div>
                             <!-- /tab 01 -->
@@ -564,15 +435,12 @@
                         <div>
                             <div class="row">
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/17.Milk-Fish.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/17.Milk-Fish.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Milk Fish</h3>
@@ -588,21 +456,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/18.Tilapia-Whole-IQF-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/18.Tilapia-Whole-IQF-2.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Tilapia Whole IQF</h3>
@@ -611,7 +471,8 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Oreochromis spp</h4>
                                                     <h4><b>Size:</b> 200/300 Gr, 300/500 Gr, 500/800 Gr, Above 800
-                                                        Gr</h4>
+                                                        Gr
+                                                    </h4>
                                                     <h4><b>Packing:</b> 1 x 10kg, 1 x 20kg</h4>
                                                     <h4><b>Origin:</b> Indonesia /China/ Taiwan / India</h4>
                                                 </div>
@@ -619,21 +480,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/19.Tilapia-Fillets.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/19.Tilapia-Fillets.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Tilapia Fillets</h3>
@@ -649,21 +502,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/20.Seer-Fish.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/20.Seer-Fish.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Seer Fish</h3>
@@ -680,23 +525,15 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/21.Basa-Fillets-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/21.Basa-Fillets-2.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Basa Fillets</h3>
@@ -713,21 +550,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/22.White-Pomfret.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/22.White-Pomfret.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>White Pomfret</h3>
@@ -744,21 +573,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/23.Black-Pomfret.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/23.Black-Pomfret.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Black Pomfret</h3>
@@ -775,13 +596,7 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
                                 </div>
                             </div>
                             <!-- /tab 01 -->
@@ -789,15 +604,12 @@
                         <div>
                             <div class="row">
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/24.Atlantic-Salmon-Whole-Gutted-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/24.Atlantic-Salmon-Whole-Gutted-2.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Atlantic Salmon Whole Gutted</h3>
@@ -813,21 +625,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/25.Atlantic-Salmon-Fillets-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/25.Atlantic-Salmon-Fillets-2.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Atlantic Salmon Fillets</h3>
@@ -843,21 +647,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/26.Atlantic-Mackerel.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/26.Atlantic-Mackerel.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Atlantic Mackerel</h3>
@@ -874,21 +670,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/27.Atlantic-Mackerel-Fillets.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/27.Atlantic-Mackerel-Fillets.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Atlantic Mackerel Fillets</h3>
@@ -905,23 +693,15 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/28.Black-Cod-Headless-Gutted-2.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/28.Black-Cod-Headless-Gutted-2.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Black Cod Headless Gutted</h3>
@@ -937,13 +717,7 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
                                 </div>
                             </div>
                             <!-- /tab 01 -->
@@ -951,15 +725,12 @@
                         <div>
                             <div class="row">
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/29.-Tuna-Loins.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/29.-Tuna-Loins.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Tuna Loins</h3>
@@ -976,21 +747,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/30.-Tuna-Saku.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/30.-Tuna-Saku.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Tuna Saku</h3>
@@ -1001,27 +764,20 @@
                                                     <h4><b>Size:</b> M (5 - 8 cm), L (8 - 15 cm), H (1 - 2 cm)</h4>
                                                     <h4><b>Packing:</b> 1 x 10 kg, 10 x 1 kg</h4>
                                                     <h4><b>Origin:</b> India / Vietnam / Indonesia / Taiwan/
-                                                        Maldives</h4>
+                                                        Maldives
+                                                    </h4>
                                                 </div>
                                             </div>
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/31.Soft-Shell-Crab.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/31.Soft-Shell-Crab.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Soft Shell Crab</h3>
@@ -1037,21 +793,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/32.Crab-Meat.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/32.Crab-Meat.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Crab Meat</h3>
@@ -1067,23 +815,15 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/33.King-Crab-Legs.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/33.King-Crab-Legs.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>King Crab Legs</h3>
@@ -1099,21 +839,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/34.Canadian-Lobster.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/34.Canadian-Lobster.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Canadian Lobster</h3>
@@ -1122,7 +854,8 @@
                                                 <div class="hide-cont">
                                                     <h4><b>Scientific name:</b> Homarus americanus</h4>
                                                     <h4><b>Size:</b> 300/350, 350/400, 400/450, 450/500, 500/600,
-                                                        600/up</h4>
+                                                        600/up
+                                                    </h4>
                                                     <h4><b>Packing:</b> 10 lbs cartons</h4>
                                                     <h4><b>Origin:</b> USA /Canada</h4>
                                                 </div>
@@ -1130,21 +863,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/35.Canadian-Lobster-Tails.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/35.Canadian-Lobster-Tails.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Canadian Lobster Tails</h3>
@@ -1160,21 +885,13 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/36.Half-Shell-Mussels.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/36.Half-Shell-Mussels.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Half Shell Mussels</h3>
@@ -1190,23 +907,15 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
                                 </div>
                                 <div class="row">
-
-
-
                                     <!-- tab 01 -->
-
                                     <div class="pro-inn-wrp">
-                                        <div class="pro-img"><img
-                                                src="https://bluewatersllcdubai.com/wp-content/uploads/2022/06/37.Scallops.jpg"
-                                                alt=""></div>
+                                        <div class="pro-img">
+                                            <img src="{{ asset('new_look/images/product/37.Scallops.jpg') }}"
+                                                alt="">
+                                        </div>
                                         <div class="pro-cent-wrp">
                                             <div class="pro-cnt">
                                                 <h3>Scallops</h3>
@@ -1222,19 +931,11 @@
                                             <i class="fa-solid fa-arrow-down-long"></i>
                                         </div>
                                     </div>
-
                                     <!-- /tab 01 -->
-
-
-
-
-
                                 </div>
                             </div>
                             <!-- /tab 01 -->
                         </div>
-
-
                         <!-- /resp-tabs-container -->
                     </div>
                 </div>

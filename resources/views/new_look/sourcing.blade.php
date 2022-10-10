@@ -19,13 +19,13 @@
                 <p></p>
                 <p></p>
                 <p class="font-17">
-                    BWG serves as a reliable and exclusive marketing agent for the reputed manufacturers in
-                    Vietnam, India, China, Indonesia, Thailand, etc. Our in-house team of experts has the right expertise to
-                    source superior quality seafood for our reputed customers. We are committed to solve the needs and pain
-                    points of B2B Customers. BWG helps in strategies to streamline with cost effectiveness and lead-time
-                    efficiency. We at BWG Dubai, helps with real-time inputs and personalized services to match your
-                    business's demand supply needs. The company can negotiate favorable payment terms between the parties,
-                    which will facilitate business as well as help the cash flow for the customer. </p>
+                    {{ COMPANY_FULL_NAME }} serves as a reliable and exclusive marketing agent for the reputed manufacturers
+                    in Vietnam, India, China, Indonesia, Thailand, etc. Our in-house team of experts has the right expertise
+                    to source superior quality seafood for our reputed customers. We are committed to solve the needs and
+                    pain points of B2B Customers. {{ COMPANY_FULL_NAME }} helps in strategies to streamline with cost
+                    effectiveness and lead-time efficiency. We helps with real-time inputs and personalized services to
+                    match your business demand supply needs. The company can negotiate favourable payment terms between the
+                    parties, which will facilitate business as well as help the cash flow for the customer.. </p>
             </div>
         </div>
         </div>

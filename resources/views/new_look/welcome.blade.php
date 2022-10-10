@@ -50,7 +50,7 @@
                         </div>
                         <div class="image-container">
                             <div class="image-wrapper">
-                                <img src="{{ asset('new_look/images/product/slider-2.jpg') }}" alt=""
+                                <img src="{{ asset('new_look/images/product/Seafood-Wallpaper-Free.jpg') }}" alt=""
                                     class="image">
                             </div>
                         </div>
@@ -153,10 +153,10 @@
                             </div>
                         </div>
                         <div class="image-container">
-                            <div class="image-wrapper"> 
-                                <img
-                                    src="{{ asset('new_look/images/product/slider2.jpg')}}"
-                                    alt="" class="image"> </div>
+                            <div class="image-wrapper">
+                                <img src="{{ asset('new_look/images/product/slider2.jpg') }}" alt=""
+                                    class="image">
+                            </div>
                         </div>
                         <div class="grad-btm"></div>
                     </div>
@@ -188,14 +188,19 @@
     </div> <!-- intro -->
     <section class="intro">
         <div class="container">
-            <div class="intro-left"> <img src="{{ asset('new_look/images/product/intro.png') }}" alt="" /> </div>
+            {{-- <div class="intro-left"> <img src="{{ asset('new_look/images/product/intro.png') }}" alt="" /> </div> --}}
+            <div class="intro-left"> <img src="{{ asset('new_look/images/fresh-seafood-on-ice.jpg') }}" alt="" /> </div>
             <div class="intro-right">
                 <h5 class="hed-cap"> {{ COMPANY_NAME }} </h5>
                 <h2 class="heading-big">{{ COMPANY_NAME }}</h2>
-                <p class="font-17"> Aiza Seafood Company Known For Seafood By Customers Around The World. We Have Been In
-                    The Seafood Industry Since 2022. We Are In The Business Of Seafood Sourcing, That Is Sourcing Various
-                    Fresh And Frozen Sea Foods To Our Clients In Europe, USA, Middle East, Vietnam, China, Thailand, Etc.
-                </p> <span class="link"><a href="about-us">More Info</a></span>
+                <p class="font-17">
+                    {{ COMPANY_FULL_NAME }} Company Known For Seafood By Customers Around The World. We Have Been In The
+                    Seafood Industry Since 2022. We Are In The Business Of Seafood Sourcing, That Is Sourcing Various Fresh
+                    And Frozen Seafoods To Our Clients In Europe, USA, Middle East, Vietnam, China, Thailand, Etc
+                </p>
+                <span class="link">
+                    <a href="{{ route('about-us') }}">More Info</a>
+                </span>
             </div>
         </div>
     </section> <!-- /intro -->
@@ -214,7 +219,41 @@
                     <h4>COMPANY PROFILE</h4>
                 </a>
             </div>
-            <div class="why-chs-left">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <h2 class="heading text-center">Why Choose Us</h2>
+                    <p>
+                        {{ COMPANY_FULL_NAME }} has continuous feedback from sourcing locations with regard to
+                        availability,
+                        season, market
+                        prices, supply and demand which will enable us to help the customer to make right and profitable
+                        buying
+                        decisions for their firms.
+                    </p>
+                    <div class="two-col">
+                        <ul class="list">
+                            <li>Quality Monitoring at all Stages of Production</li>
+                            <li>Market Feedback for Buying Decisions.li>
+                            <li>Partial shipment assistance.</li>
+                            <li>Mixed Products in a single container.</li>
+                        </ul>
+                    </div>
+                    <div class="two-col last">
+                        <ul class="list">
+                            <li>Flexible payment terms.</li>
+                            <li>Assured and timely delivery.</li>
+                            <li>Sourcing from Right Locations.</li>
+                        </ul>
+                    </div>
+                    <p class="text-center">
+                        <span class="link">
+                            <a href="{{ route('about-us') }}">More Info</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            {{-- <div class="why-chs-left">
                 <ul class="data-progress">
                     <li>
                         <h2><span class="counting">17</span></h2> Years in Middle East
@@ -229,12 +268,15 @@
                         <h2><span class="counting">100</span>%</h2> Quality Products
                     </li>
                 </ul>
-            </div>
-            <div class="why-chs-right">
+            </div> --}}
+            {{-- <div class="why-chs-right">
                 <h2 class="heading">Why Choose Us</h2>
-                <p> BWG has continuous feedback from sourcing locations with regard to availability, season, market prices,
-                    supply and demand which will enable us to help the customer to make right and profitable buying
-                    decisions for their firms.</p>
+                <p>
+                    {{ COMPANY_FULL_NAME }} has continuous feedback from sourcing locations with regard to availability,
+                    season, market
+                    prices, supply and demand which will enable us to help the customer to make right and profitable buying
+                    decisions for their firms.
+                </p>
                 <div class="two-col">
                     <ul class="list">
                         <li>Quality Monitoring at all Stages of Production</li>
@@ -255,7 +297,7 @@
                     </ul>
                 </div>
                 <p><span class="link"><a href="about-us">More Info</a></span></p>
-            </div>
+            </div> --}}
         </div>
     </section> <!-- /why choose -->
     <!-- products -->
@@ -666,17 +708,19 @@
                     </div>
                     <h3>QUALITY CONTROL</h3>
                     <p>
-                    <p>Every product sourced by BWG passes through continuous quality control monitoring.</p>
-                    </p> <span class="link"> <a href="{{ route('services') }}">More Info</a> </span>
+                    <p>Every product sourced by {{ COMPANY_FULL_NAME }} passes through continuous quality control
+                        monitoring.</p>
+                    </p> <span class="link"> <a href="{{ route('quality-control') }}">More Info</a> </span>
                 </div>
                 <div class="three-box">
                     <div class="icon-qlt"> <img src="{{ asset('new_look/images/product/icon5.png') }}" alt="">
                     </div>
                     <h3>SUPPLY CHAIN MANAGEMENT</h3>
                     <p>
-                    <p>Based on the request, BWG supports customers with customs clearance, warehousing, and local
+                    <p>Based on the request, {{ COMPANY_FULL_NAME }} supports customers with customs clearance,
+                        warehousing, and local
                         distributions.</p>
-                    </p> <span class="link"> <a href="{{ route('services') }}">More Info</a> </span>
+                    </p> <span class="link"> <a href="{{ route('distribution') }}">More Info</a> </span>
                 </div>
             </div>
         </div>
