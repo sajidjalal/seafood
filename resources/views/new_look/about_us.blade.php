@@ -38,12 +38,10 @@
                 <h5 class="hed-cap">{{ COMPANY_NAME }}</h5>
                 <h2 class="heading-big" hidden>
                     Aiza Seafood
-                    Prv. Lmt.(REMOVE PVT LTD)
                 </h2>
 
                 <p>
                     <span class="blue"> Aiza Seafood </span>
-                    <span class="red"> Prv. Lmt.(REMOVE PVT LTD) </span>
                 </p>
 
                 <p class="font-17">
