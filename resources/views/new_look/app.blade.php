@@ -10,9 +10,9 @@
     <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96"
         href="{{ asset('new_look/images/favicon/favicon.ico') }}" type="image/x-icon"> <!-- Favicon & Icons End-->
     <!-- Custom Browser Color Start-->
-    <meta name="theme-color" content="#1658a1">
-    <meta name="msapplication-navbutton-color" content="#1658a1">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1658a1"> <!-- Custom Browser Color End-->
+    <meta name="theme-color" content="#b6b2b2">
+    <meta name="msapplication-navbutton-color" content="#b6b2b2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b6b2b2"> <!-- Custom Browser Color End-->
     <!-- css -->
     <link rel="stylesheet" href=" {{ asset('new_look/css/theme/normalize.css') }} " />
     <link rel="stylesheet" href=" {{ asset('new_look/css/theme/backToTop.css') }}" />

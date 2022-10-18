@@ -38,7 +38,7 @@
 .jetmenu > li.active > a{
 		color: #1558a4;
 }
-.jetmenu li a:after{ position: absolute; content: ''; width: 0%; height: 1px; left: 0px; bottom: -1px; background-color: #1658a1;-webkit-transition: all 300ms ease-in-out;
+.jetmenu li a:after{ position: absolute; content: ''; width: 0%; height: 1px; left: 0px; bottom: -1px; background-color: #b6b2b2;-webkit-transition: all 300ms ease-in-out;
 -moz-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; }
 .jetmenu li:hover a:after, .jetmenu li.active a:after{ width: 100%;  }
 

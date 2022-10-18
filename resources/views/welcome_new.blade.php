@@ -15,9 +15,9 @@
     <!-- Favicon & Icons End-->
 
     <!-- Custom Browser Color Start-->
-    <meta name="theme-color" content="#1658a1">
-    <meta name="msapplication-navbutton-color" content="#1658a1">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#1658a1">
+    <meta name="theme-color" content="#b6b2b2">
+    <meta name="msapplication-navbutton-color" content="#b6b2b2">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b6b2b2">
     <!-- Custom Browser Color End-->
     <!-- css -->
     <link rel="stylesheet" href=" {{ asset('new_look/css/theme/normalize.css') }} " />

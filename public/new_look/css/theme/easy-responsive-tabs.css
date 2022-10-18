@@ -109,14 +109,13 @@ h2.resp-tab-title:last-child {
     width: 100%;
 }
 .resp-vtabs li.resp-tab-active {
-   /* border: 1px solid #c1c1c1;
-    */
-   background-color: #1558a4;
-   position: relative;
-   z-index: 1;
-   /* margin-right: 0px !important; */
-   /* padding: 12px 15px !important; */
-   color: #FFFFFF;
+    /*border: 1px solid #c1c1c1; */
+    background-color: #ddf6f5;
+    position: relative;
+    z-index: 1;
+    /* margin-right: 0px !important; */
+    /* padding: 12px 15px !important; */
+    color: black;
 }
 .resp-arrow {
     width: 0;

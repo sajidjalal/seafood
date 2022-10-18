@@ -2,7 +2,7 @@
 @section('content')
     <style>
         span.blue {
-            color: #1658a1;
+            color: #b6b2b2;
             font-size: 35px;
             font-weight: 700;
             line-height: 58px;
