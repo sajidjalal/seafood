@@ -7,7 +7,7 @@
                     <div class="slide is-loaded q_current" id="page-top-banner">
                         <div class="slide-content">
                             <div class="container">
-                                <div class="caption">
+                                <div class="caption" style="display: none">
                                     <h1 class="q_splitText" editor-binding="slider.title" index-order="i"><span
                                             style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">F</span><span
                                             style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">i</span><span
@@ -50,8 +50,10 @@
                         </div>
                         <div class="image-container">
                             <div class="image-wrapper">
-                                <img src="{{ asset('new_look/images/product/Seafood-Wallpaper-Free.jpg') }}" alt=""
+                                <img src="{{ asset('new_look/images/logo205_90.jpg') }}" alt=""
                                     class="image">
+                                {{-- <img src="{{ asset('new_look/images/product/Seafood-Wallpaper-Free.jpg') }}" alt=""
+                                    class="image"> --}}
                             </div>
                         </div>
                         <div class="grad-btm"></div>
@@ -234,7 +236,7 @@
                     <div class="two-col">
                         <ul class="list">
                             <li>Quality Monitoring at all Stages of Production</li>
-                            <li>Market Feedback for Buying Decisions.li>
+                            <li>Market Feedback for Buying Decisions.<li>
                             <li>Partial shipment assistance.</li>
                             <li>Mixed Products in a single container.</li>
                         </ul>
