@@ -55,7 +55,7 @@
         <div class="container">
             <div class="logo">
                 <a href="{{ route('home-new') }}">
-                    <img src="{{ asset('new_look/images/logo205_90.jpg') }}" width="205" height="90"
+                    <img src="{{ asset('new_look/images/logo.jpeg') }}" width="205" height="90"
                         alt="{{ COMPANY_NAME }}">
                 </a>
             </div>

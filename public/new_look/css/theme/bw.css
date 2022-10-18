@@ -218,7 +218,7 @@ header:after {
     height: 49px;
     right: 0px;
     bottom: 0px;
-    background-color: #1558a4;
+    background-color: #b6b2b2;
 }
 .logo {
     float: left;
@@ -790,7 +790,7 @@ footer h4 a {
 min-height: 52px; padding-left: 10px; padding-right: 10px; margin-bottom: 0;*/
 }
 .pro-inn-wrp .pro-img {
-    margin-top: -132px;
+    margin-top: -0;
     z-index: 1;
 }
 .pro-inn-wrp {

@@ -32,7 +32,7 @@
   text-transform: uppercase;
     display: inline-block;  
 }
-.jetmenu li:last-child a{ color: #fff; background-color: #1558a4; }
+.jetmenu li:last-child a{color: #fff;background-color: #b6b2b2;}
 
 .jetmenu > li:hover > a,
 .jetmenu > li.active > a{
