@@ -50,8 +50,7 @@
                         </div>
                         <div class="image-container">
                             <div class="image-wrapper">
-                                <img src="{{ asset('new_look/images/logo205_90.jpg') }}" alt=""
-                                    class="image">
+                                <img src="{{ asset('new_look/images/banner_slider.jpg') }}" alt="" class="image">
                                 {{-- <img src="{{ asset('new_look/images/product/Seafood-Wallpaper-Free.jpg') }}" alt=""
                                     class="image"> --}}
                             </div>
@@ -191,7 +190,8 @@
     <section class="intro">
         <div class="container">
             {{-- <div class="intro-left"> <img src="{{ asset('new_look/images/product/intro.png') }}" alt="" /> </div> --}}
-            <div class="intro-left"> <img src="{{ asset('new_look/images/fresh-seafood-on-ice.jpg') }}" alt="" /> </div>
+            <div class="intro-left"> <img src="{{ asset('new_look/images/fresh-seafood-on-ice.jpg') }}" alt="" />
+            </div>
             <div class="intro-right">
                 <h5 class="hed-cap"> {{ COMPANY_NAME }} </h5>
                 <h2 class="heading-big">{{ COMPANY_NAME }}</h2>
@@ -236,7 +236,8 @@
                     <div class="two-col">
                         <ul class="list">
                             <li>Quality Monitoring at all Stages of Production</li>
-                            <li>Market Feedback for Buying Decisions.<li>
+                            <li>Market Feedback for Buying Decisions.
+                            <li>
                             <li>Partial shipment assistance.</li>
                             <li>Mixed Products in a single container.</li>
                         </ul>
