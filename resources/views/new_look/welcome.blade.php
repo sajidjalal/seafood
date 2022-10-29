@@ -309,9 +309,10 @@
             <h2 class="heading head-top-bg">Our Products</h2>
             <div class="owl-demo4 owl-top-pad">
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/1.Vannamei-Head-On-Shell-On-HOSO.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/1.Vannamei-Head-On-Shell-On-HOSO.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Vannamei Head On Shell On (HOSO)</h3>
@@ -320,9 +321,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/2.Vannamei-Peeled-Deveined-Tail-On-PDTO.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/2.Vannamei-Peeled-Deveined-Tail-On-PDTO.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Vannamei Peeled &#038; Deveined Tail On (PDTO)</h3>
@@ -331,8 +333,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/29.-Tuna-Loins.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/29.-Tuna-Loins.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Tuna Loins</h3>
@@ -341,9 +344,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/3.Vannamei-Peeled-Deveined-Tail-Off-PD.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/3.Vannamei-Peeled-Deveined-Tail-Off-PD.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Vannamei Peeled &#038; Deveined Tail Off (PD)</h3>
@@ -352,9 +356,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/4.Vannamei-Peeled-Deveined-Tail-On-Cooked-PDTO-Cooked.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/4.Vannamei-Peeled-Deveined-Tail-On-Cooked-PDTO-Cooked.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Vannamei Peeled &#038; Deveined Tail On Cooked (PDTO Cooked)</h3>
@@ -363,9 +368,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/5.Head-On-Shell-On-Black-Tiger-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/5.Head-On-Shell-On-Black-Tiger-2.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Head On Shell On Black Tiger</h3>
@@ -374,8 +380,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/30.-Tuna-Saku.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/30.-Tuna-Saku.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Tuna Saku</h3>
@@ -384,9 +391,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/6.Peeled-Deveined-Tail-On-Black-Tiger.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/6.Peeled-Deveined-Tail-On-Black-Tiger.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Peeled &#038; Deveined Tail On Black Tiger</h3>
@@ -395,8 +403,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/7.Head-On-Sea-Tiger.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/7.Head-On-Sea-Tiger.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Head On Sea Tiger</h3>
@@ -405,8 +414,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/31.Soft-Shell-Crab.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/31.Soft-Shell-Crab.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Soft Shell Crab</h3>
@@ -415,8 +425,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/Rock-Lobster.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/Rock-Lobster.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Rock Lobster</h3>
@@ -425,8 +436,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/9.Rock-Lobster-Tail.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/9.Rock-Lobster-Tail.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Rock Lobster Tail</h3>
@@ -435,8 +447,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/32.Crab-Meat.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/32.Crab-Meat.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Crab Meat</h3>
@@ -445,8 +458,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/10.Sand-Lobster.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/10.Sand-Lobster.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Sand Lobster</h3>
@@ -455,8 +469,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/33.King-Crab-Legs.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/33.King-Crab-Legs.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>King Crab Legs</h3>
@@ -465,8 +480,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/34.Canadian-Lobster.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/34.Canadian-Lobster.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Canadian Lobster</h3>
@@ -475,8 +491,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/35.Canadian-Lobster-Tails.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/35.Canadian-Lobster-Tails.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Canadian Lobster Tails</h3>
@@ -485,8 +502,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/36.Half-Shell-Mussels.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/36.Half-Shell-Mussels.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Half Shell Mussels</h3>
@@ -495,8 +513,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/37.Scallops.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/37.Scallops.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Scallops</h3>
@@ -505,9 +524,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/24.Atlantic-Salmon-Whole-Gutted-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/24.Atlantic-Salmon-Whole-Gutted-2.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Atlantic Salmon Whole Gutted</h3>
@@ -516,8 +536,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/25.Atlantic-Salmon-Fillets-2.jpg') }}" alt="">
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/25.Atlantic-Salmon-Fillets-2.jpg') }}"
+                            alt="">
                     </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
@@ -527,8 +548,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/26.Atlantic-Mackerel.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/26.Atlantic-Mackerel.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Atlantic Mackerel</h3>
@@ -537,8 +559,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/27.Atlantic-Mackerel-Fillets.jpg') }}" alt="">
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/27.Atlantic-Mackerel-Fillets.jpg') }}"
+                            alt="">
                     </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
@@ -548,9 +571,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/28.Black-Cod-Headless-Gutted-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/28.Black-Cod-Headless-Gutted-2.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Black Cod Headless Gutted</h3>
@@ -559,9 +583,10 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/28.Black-Cod-Headless-Gutted-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/28.Black-Cod-Headless-Gutted-2.jpg') }}"
+                            alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Milk Fish</h3>
@@ -570,8 +595,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/18.Tilapia-Whole-IQF-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/18.Tilapia-Whole-IQF-2.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Tilapia Whole IQF</h3>
@@ -580,8 +606,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/19.Tilapia-Fillets.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/19.Tilapia-Fillets.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Tilapia Fillets</h3>
@@ -590,8 +617,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/20.Seer-Fish.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/20.Seer-Fish.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Seer Fish</h3>
@@ -600,8 +628,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/21.Basa-Fillets-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/21.Basa-Fillets-2.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Basa Fillets</h3>
@@ -610,8 +639,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/22.White-Pomfret.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/22.White-Pomfret.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>White Pomfret</h3>
@@ -620,8 +650,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/23.Black-Pomfret.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/23.Black-Pomfret.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Black Pomfret</h3>
@@ -630,8 +661,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/11.Squid-Whole.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/11.Squid-Whole.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Squid Whole</h3>
@@ -640,8 +672,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/12.Squid-Whole-Cleaned.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/12.Squid-Whole-Cleaned.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Squid Whole Cleaned</h3>
@@ -650,8 +683,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/13.Squid-Tubes-change-2.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/13.Squid-Tubes-change-2.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Squid Tubes</h3>
@@ -660,8 +694,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img src="{{ asset('new_look/images/product/14.Squid-Rings.jpg') }}"
-                            alt=""> </div>
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/14.Squid-Rings.jpg') }}" alt="">
+                    </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">
                             <h3>Squid Rings</h3>
@@ -670,8 +705,8 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="pro-img"> <img
-                            src="{{ asset('new_look/images/product/15.Cuttlefish-Whole-Cleaned.jpg') }}" alt="">
+                    <div class="pro-img">
+                        <img src="{{ asset('new_look/images/product/15.Cuttlefish-Whole-Cleaned.jpg') }}" alt="">
                     </div>
                     <div class="pro-cent-wrp">
                         <div class="pro-cnt">

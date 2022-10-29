@@ -89,11 +89,31 @@
                 </div>
                 <div class="menu">
                     <ul id="jetmenu" class="jetmenu">
-                        <li class=""><a href="{{ route('home-new') }}">Home</a></li>
-                        <li class=" "><a href="{{ route('about-us') }}">About Us</a></li>
-                        <li class=" "><a href="{{ route('services') }}">Services</a></li>
-                        <li class=" active  "><a href="{{ route('products') }}">Products</a></li>
-                        <li><a class="hvr-clr" href="{{ route('contact-us') }}">Contact Us</a></li>
+
+                        <li class=" {{ $current_menu == 'home' ? 'active' : '' }}">
+                            <a href="{{ route('home-new') }}">Home
+                            </a>
+                        </li>
+                        <li class=" {{ $current_menu == 'about_us' ? 'active' : '' }}">
+                            <a href="{{ route('about-us') }}">About Us
+                            </a>
+                        </li>
+                        <li class=" {{ $current_menu == 'services' ? 'active' : '' }}">
+                            <a href="{{ route('services') }}">Services
+                            </a>
+                        </li>
+                        <li class=" {{ $current_menu == 'products' ? 'active' : '' }}">
+                            <a href="{{ route('products') }}">Products
+                            </a>
+                        </li>
+                        <li class=" {{ $current_menu == 'contact_us' ? 'active' : '' }}">
+                            <a href="{{ route('contact-us') }}">Contact Us
+                            </a>
+                        </li>
+                        <li class=" {{ $current_menu == 'login' ? 'active' : '' }}">
+                            <a class="hvr-clr" href="{{ route('contact-us') }}">Login
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
