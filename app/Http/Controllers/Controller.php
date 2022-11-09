@@ -91,18 +91,38 @@ class Controller extends BaseController
     {
         $data['page_title'] = 'Welcome to SeaFoods';
         $data['current_menu'] = "home";
+
+        $data['product_list'] =  ProductCategoriesModel::select(['product_categories.*'])
+            ->join('product_master', 'product_master.id', 'product_categories.product_id')
+            ->where('product_master.status', 1)
+            ->where('product_categories.status', 1)
+            ->get();
+
         return view('new_look.welcome', $data);
     }
 
     public function products()
     {
         $data['page_title'] = 'Products list';
+        $data['product_master'] = ProductMasterModel::select(['id', 'name'])->where('status', 1)->get();
+        $data['dynamic_name'] = "product_categories_";
+        foreach ($data['product_master'] as $key => $value) {
+            $dynamic_name = "product_categories_" . $key;
+            $data['dynamic_category'][$dynamic_name] =  ProductCategoriesModel::select(['product_categories.*'])
+                ->join('product_master', 'product_master.id', 'product_categories.product_id')
+                ->where('product_master.status', 1)
+                ->where('product_categories.status', 1)
+                ->where('product_id', $value->id)->get();
+        }
+
         $data['product_categories_crustaceans'] =  ProductCategoriesModel::select(['product_categories.*'])
             ->join('product_master', 'product_master.id', 'product_categories.product_id')
+            ->where('product_master.status', 1)
             ->where('product_id', 4)->get();
+
         $data['current_menu'] = "products";
 
-        return view('new_look.product', $data);
+        return view('new_look.product_new', $data);
     }
 
     public function about_us()

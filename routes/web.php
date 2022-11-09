@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +33,8 @@ Route::get('/products', [Controller::class, 'products'])->name('products');
 Route::get('/sourcing', [Controller::class, 'sourcing'])->name('sourcing');
 Route::get('/quality-control', [Controller::class, 'quality_control'])->name('quality-control');
 Route::get('/distribution', [Controller::class, 'distribution'])->name('distribution');
+
+Auth::routes();
+// Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+// });
