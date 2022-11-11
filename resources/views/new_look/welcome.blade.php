@@ -258,7 +258,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- /why choose -->
 
     <!-- products -->
