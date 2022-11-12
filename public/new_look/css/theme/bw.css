@@ -795,6 +795,7 @@ min-height: 52px; padding-left: 10px; padding-right: 10px; margin-bottom: 0;*/
 .pro-inn-wrp .pro-img {
     margin-top: -0;
     z-index: 1;
+    height: 170px;
 }
 .pro-inn-wrp {
     /* margin-top: 132px; */

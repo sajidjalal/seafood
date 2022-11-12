@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactUsModel;
 use App\Models\Model\ProductCategoriesModel;
 use App\Models\Model\ProductMasterModel;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -9,6 +10,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Validator;
 
 class Controller extends BaseController
 {
@@ -156,6 +158,7 @@ class Controller extends BaseController
 
         return view('new_look.sourcing', $data);
     }
+
     public function quality_control()
     {
         $data['page_title'] = 'Quality Control';
@@ -163,11 +166,58 @@ class Controller extends BaseController
 
         return view('new_look.quality-control', $data);
     }
+
     public function distribution()
     {
         $data['page_title'] = 'SUPPLY CHAIN MANAGEMENT';
         $data['current_menu'] = "distribution";
 
         return view('new_look.distribution', $data);
+    }
+
+    public function contact_register(Request $request)
+    {
+
+
+        $rules = [
+            'name'      => 'required',
+            'email_id'  => 'required',
+            'subject'   => 'required',
+            'message'   => 'required',
+            'mobile_number' => 'required|numeric',
+        ];
+        $messages = [
+            'name.required' => 'The name field is required',
+        ];
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            $resposne['message'] = "Validation Error";
+            return response()->json(["status" => true, "fields" => $validator->errors(), "message" => $resposne['message'],], 422);
+        } else {
+
+            $fields = array(
+                'email_id'  => (isset($request->email_id) ? $request->email_id : ''),
+                'name'      => (isset($request->name) ? $request->name : ''),
+                'mobile_number'   => (isset($request->mobile_number) ? $request->mobile_number : ''),
+                'subject'   => (isset($request->subject) ? $request->subject : ''),
+                'message'   => (isset($request->message) ? $request->message : ''),
+            );
+
+            $user = ContactUsModel::create($fields);
+
+            $mail_data = [];
+            $mail_data['user_id'] = $user->id;
+            $mail_data['user_mail_data']  = $fields;
+            $mail_data['user_type']  = 0;
+            $mail_data['email_to'] = $request->email_id;
+            $mail_data['template_name'] = "emails.contact_us_mail";
+            $mail_data['subject'] =  "User Contact us";
+            mail_sending_helper($mail_data);
+    
+            return response()->json([
+                'status' => true, 'message' => 'Request Sent Successfully.'
+            ], 200);
+        }
     }
 }

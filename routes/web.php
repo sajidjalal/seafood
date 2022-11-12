@@ -34,7 +34,11 @@ Route::get('/sourcing', [Controller::class, 'sourcing'])->name('sourcing');
 Route::get('/quality-control', [Controller::class, 'quality_control'])->name('quality-control');
 Route::get('/distribution', [Controller::class, 'distribution'])->name('distribution');
 
+
 Auth::routes();
 // Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 // });
+
+Route::post('/contact-register', [Controller::class, 'contact_register'])->name('contact-register');
+Route::get('/mail-test', [HomeController::class, 'mail_test']);

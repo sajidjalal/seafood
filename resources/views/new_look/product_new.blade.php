@@ -20,6 +20,9 @@
                         @endforeach
                     </ul>
                     <!-- resp-tabs-container -->
+
+                
+
                     <div class="resp-tabs-container">
 
                         @foreach ($product_master as $key => $value)
@@ -29,6 +32,7 @@
                             @endphp
 
                             <div>
+
                                 <div class="row">
                                     <div class="row">
                                         @foreach ($dynamic_category[$dynamic_product_categories] as $key_inner => $value)
@@ -71,4 +75,5 @@
             </div>
     </section>
     <!-- /intro -->
+    <script type='text/javascript' src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 @endsection
