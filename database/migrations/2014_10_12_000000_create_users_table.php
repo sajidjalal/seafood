@@ -17,18 +17,18 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->integer('mobile')->unsigned()->unique();
+            $table->string('mobile',25)->nullable();
             $table->integer('qualification')->unsigned()->nullable();
-            $table->string('pincode',6);            
-            $table->string('city',50);
-            $table->string('state',50);
-            $table->string('address');
+            $table->string('pincode',6)->nullable();            
+            $table->string('city',50)->nullable();
+            $table->string('state',50)->nullable();
+            $table->string('address')->nullable();
             $table->string('avatar')->nullable();
             $table->string('role', 25)->default('user');
 
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->rememberToken()->nullable();
 
             $table->boolean('status')->default(0);            
             
