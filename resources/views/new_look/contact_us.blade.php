@@ -111,7 +111,7 @@
                             </div>
                             <div class="col smd1 gutter text-center">
                                 <span>
-                                    <input type="submit" value="Send now"
+                                    <input type="submit" value="Send now" id="submit"
                                         class="wpcf7-form-control has-spinner wpcf7-submit sendbutton" />
                                 </span>
                             </div>
@@ -166,7 +166,6 @@
                 }
             },
             submitHandler: function(form) {
-                debugger;
                 var fd = new FormData(form);
 
                 var submit_id = (document.activeElement).id;

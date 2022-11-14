@@ -25,7 +25,7 @@ class ProductMasterSeeder extends Seeder
                 "updated_by" => 0,
                 "created_at" => now(),
                 "updated_at" => now(),
-                "deleted_at" => now(),
+                "deleted_at" => "2022-10-22 16:48:36",
             ),
             array(
                 "id" => 2,
@@ -35,7 +35,7 @@ class ProductMasterSeeder extends Seeder
                 "updated_by" => 0,
                 "created_at" => now(),
                 "updated_at" => now(),
-                "deleted_at" => now(),
+                "deleted_at" => "2022-10-22 16:48:36",
             ),
             array(
                 "id" => 3,
@@ -45,7 +45,7 @@ class ProductMasterSeeder extends Seeder
                 "updated_by" => 0,
                 "created_at" => now(),
                 "updated_at" => now(),
-                "deleted_at" => now(),
+                "deleted_at" => "2022-10-22 16:48:36",
             ),
             array(
                 "id" => 4,
@@ -60,7 +60,7 @@ class ProductMasterSeeder extends Seeder
             array(
                 "id" => 5,
                 "name" => "Cephalopods",
-                "status" => 0,
+                "status" => 1,
                 "created_by" => 0,
                 "updated_by" => 0,
                 "created_at" => now(),
@@ -95,6 +95,16 @@ class ProductMasterSeeder extends Seeder
                 "updated_by" => 0,
                 "created_at" => now(),
                 "updated_at" => now(),
+                "deleted_at" => NULL,
+            ),
+            array(
+                "id" => 9,
+                "name" => "FRESHWATER FISHES",
+                "status" => 1,
+                "created_by" => 0,
+                "updated_by" => 0,
+                "created_at" => NULL,
+                "updated_at" => NULL,
                 "deleted_at" => NULL,
             ),
 

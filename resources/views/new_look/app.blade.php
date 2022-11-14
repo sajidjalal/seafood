@@ -45,8 +45,11 @@
         media='all' id='wp-block-library-css' />
 
     <link rel='stylesheet' href='{{ asset('css/common.css') }}' type='text/css' />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/jquery/jquery.validate.js') }}"></script>
+    <script src="{{ asset('js/jquery/sweetalert2.js') }}"></script>
+    {{-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> --}}
+    {{-- <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script> --}}
 
 </head>
 
@@ -136,8 +139,7 @@
     <footer>
         <div class="container">
             <h5> {{ CONTACT_ADDRESS }} </h5>
-            <h4>Mob: <a href="tel:{{ CONTACT_NO }}"> {{ CONTACT_NO }} </a> | <a
-                    href="tel:{{ CONTACT_NO_2 }}">
+            <h4>Mob: <a href="tel:{{ CONTACT_NO }}"> {{ CONTACT_NO }} </a> | <a href="tel:{{ CONTACT_NO_2 }}">
                     {{ CONTACT_NO_2 }}</a> {{-- | Fax: xxxx x xx xxxx<br> --}} Email: <a
                     href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a> </h4>
         </div>
@@ -252,7 +254,7 @@
                 fit: true
             });
         });
-    </script> <!-- <script src="js/jquery.min.js"></script> -->
+    </script>
     <script src="{{ asset('new_look/js/theme/backToTop.js') }}"></script>
     <script type='text/javascript' src='{{ asset('new_look/js/theme/vendor/regenerator-runtime.min.js') }}'
         id='regenerator-runtime-js'></script>
