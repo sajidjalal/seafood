@@ -18,12 +18,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('crm/img/favicons/favicon-16x16.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('crm/img/favicons/favicon.ico') }}">
 
-    <link rel="manifest" href="https://prium.github.io/falcon/v3.13.0/assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage"
-        content="https://prium.github.io/falcon/v3.13.0/assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://prium.github.io/falcon/v3.13.0/assets/js/config.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/simplebar/simplebar.min.js"></script>
+    <script src="{{ asset('crm/vendor/js/config.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/simplebar.min.js') }}"></script>
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
@@ -31,13 +28,11 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap"
         rel="stylesheet">
-    <link href="https://prium.github.io/falcon/v3.13.0/vendors/simplebar/simplebar.min.css" rel="stylesheet">
-    <link href="https://prium.github.io/falcon/v3.13.0/assets/css/theme-rtl.min.css" rel="stylesheet" id="style-rtl">
-    <link href="https://prium.github.io/falcon/v3.13.0/assets/css/theme.min.css" rel="stylesheet" id="style-default">
-    <link href="https://prium.github.io/falcon/v3.13.0/assets/css/user-rtl.min.css" rel="stylesheet"
-        id="user-style-rtl">
-    <link href="https://prium.github.io/falcon/v3.13.0/assets/css/user.min.css" rel="stylesheet"
-        id="user-style-default">
+    <link href="{{ asset('crm/vendor/css/simplebar.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('crm/vendor/css/theme-rtl.min.css') }}" rel="stylesheet" id="style-rtl">
+    <link href="{{ asset('crm/vendor/css/theme.min.css') }}" rel="stylesheet" id="style-default">
+    <link href="{{ asset('crm/vendor/css/user-rtl.min.css') }}" rel="stylesheet" id="user-style-rtl">
+    <link href="{{ asset('crm/vendor/css/user.min.css') }}" rel="stylesheet" id="user-style-default">
     <script>
         var isRTL = JSON.parse(localStorage.getItem('isRTL'));
         if (isRTL) {
@@ -80,9 +75,10 @@
                         aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span
                                 class="toggle-line"></span></span></button>
                     <a class="navbar-brand me-1 me-sm-3" href="index.html">
-                        <div class="d-flex align-items-center"><img class="me-2"
-                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/spot-illustrations/falcon.png"
-                                alt="" width="40" /><span class="font-sans-serif">falcon</span></div>
+                        <div class="d-flex align-items-center">
+                            <img class="me-2" src="{{ asset('theme/falcon.png') }}" alt="" width="40" />
+                            <span class="font-sans-serif">falcon</span>
+                        </div>
                     </a>
                     <ul class="navbar-nav align-items-center d-none d-lg-block">
                         <li class="nav-item">
@@ -154,8 +150,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="file-thumbnail me-2"><img
                                                         class="border h-100 w-100 fit-cover rounded-3"
-                                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/products/3-thumb.png"
-                                                        alt="" />
+                                                        src="{{ asset('theme/3-thumb.png') }}" alt="" />
                                                 </div>
                                                 <div class="flex-1">
                                                     <h6 class="mb-0 title">iPhone</h6>
@@ -169,8 +164,7 @@
                                         <a class="dropdown-item px-card py-2" href="#!">
                                             <div class="d-flex align-items-center">
                                                 <div class="file-thumbnail me-2"><img class="img-fluid"
-                                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/zip.png"
-                                                        alt="" /></div>
+                                                        src="{{ asset('theme/zip.png') }}" alt="" /></div>
                                                 <div class="flex-1">
                                                     <h6 class="mb-0 title">Falcon v1.8.2</h6>
                                                     <p class="fs--2 mb-0 d-flex"><span
@@ -187,8 +181,7 @@
                                         <a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar avatar-l status-online me-2">
-                                                    <img class="rounded-circle"
-                                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/team/1.jpg"
+                                                    <img class="rounded-circle" src="{{ asset('theme/1.jpg') }}"
                                                         alt="" />
                                                 </div>
                                                 <div class="flex-1">
@@ -200,8 +193,7 @@
                                         <a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar avatar-l me-2">
-                                                    <img class="rounded-circle"
-                                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/team/2.jpg"
+                                                    <img class="rounded-circle" src="{{ asset('theme/2.jpg') }}"
                                                         alt="" />
                                                 </div>
                                                 <div class="flex-1">
@@ -213,8 +205,7 @@
                                         <a class="dropdown-item px-card py-2" href="pages/user/profile.html">
                                             <div class="d-flex align-items-center">
                                                 <div class="avatar avatar-l me-2">
-                                                    <img class="rounded-circle"
-                                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/team/3.jpg"
+                                                    <img class="rounded-circle" src="{{ asset('theme/3.jpg') }}"
                                                         alt="" />
                                                 </div>
                                                 <div class="flex-1">
@@ -277,7 +268,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-2xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/team/1-thumb.png"
+                                                                src="{{ asset('theme/1-thumb.png') }}"
                                                                 alt="" />
                                                         </div>
                                                     </div>
@@ -315,7 +306,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-2xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/weather-sm.jpg"
+                                                                src="{{ asset('theme/weather-sm.jpg') }}"
                                                                 alt="" />
                                                         </div>
                                                     </div>
@@ -334,7 +325,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/logos/oxford.png"
+                                                                src="{{ asset('theme/oxford.png') }}"
                                                                 alt="" />
                                                         </div>
                                                     </div>
@@ -353,8 +344,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/team/10.jpg"
-                                                                alt="" />
+                                                                src="{{ asset('theme/10.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
                                                     <div class="notification-body">
@@ -409,8 +399,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="pages/user/profile.html" target="_blank">
                                                         <div class="avatar avatar-2xl"> <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/team/3.jpg"
-                                                                alt="" /></div>
+                                                                src="{{ asset('theme/3.jpg') }}" alt="" />
+                                                        </div>
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2">Account
                                                         </p>
                                                     </a>
@@ -419,8 +409,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="https://themewagon.com/" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/themewagon.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/themewagon.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Themewagon
                                                         </p>
@@ -430,8 +420,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="https://mailbluster.com/" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/mailbluster.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/mailbluster.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Mailbluster
                                                         </p>
@@ -440,8 +430,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/google.png"
+                                                        <img class="rounded" src="{{ asset('theme/google.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Google
@@ -451,8 +440,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/spotify.png"
+                                                        <img class="rounded" src="{{ asset('theme/spotify.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Spotify
@@ -462,8 +450,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/steam.png"
+                                                        <img class="rounded" src="{{ asset('theme/steam.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Steam
@@ -474,7 +461,7 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/github-light.png"
+                                                            src="{{ asset('theme/github-light.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Github
@@ -484,8 +471,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/discord.png"
+                                                        <img class="rounded" src="{{ asset('theme/discord.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Discord
@@ -495,8 +481,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/xbox.png"
+                                                        <img class="rounded" src="{{ asset('theme/xbox.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             xbox
@@ -506,8 +491,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/trello.png"
+                                                        <img class="rounded" src="{{ asset('theme/trello.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Kanban
@@ -517,8 +501,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/hp.png"
+                                                        <img class="rounded" src="{{ asset('theme/hp.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Hp
                                                         </p>
@@ -530,8 +513,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/linkedin.png"
+                                                        <img class="rounded" src="{{ asset('theme/linkedin.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Linkedin
@@ -541,8 +523,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/twitter.png"
+                                                        <img class="rounded" src="{{ asset('theme/twitter.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Twitter
@@ -552,8 +533,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/facebook.png"
+                                                        <img class="rounded" src="{{ asset('theme/facebook.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Facebook
@@ -563,8 +543,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/instagram.png"
+                                                        <img class="rounded" src="{{ asset('theme/instagram.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Instagram
@@ -574,8 +553,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/pinterest.png"
+                                                        <img class="rounded" src="{{ asset('theme/pinterest.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Pinterest
@@ -585,8 +563,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/slack.png"
+                                                        <img class="rounded" src="{{ asset('theme/slack.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Slack
@@ -597,8 +574,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/deviantart.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/deviantart.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Deviantart
                                                         </p>
@@ -629,8 +606,7 @@
                             <a class="nav-link pe-0 ps-2" id="navbarDropdownUser" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="avatar avatar-xl">
-                                    <img class="rounded-circle"
-                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/team/3-thumb.png"
+                                    <img class="rounded-circle" src="{{ asset('theme/3-thumb.png') }}"
                                         alt="" />
                                 </div>
                             </a>
@@ -661,8 +637,8 @@
                                 class="toggle-line"></span></span></button>
                     <a class="navbar-brand me-1 me-sm-3" href="index.html">
                         <div class="d-flex align-items-center"><img class="me-2"
-                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/spot-illustrations/falcon.png"
-                                alt="" width="40" /><span class="font-sans-serif">falcon</span></div>
+                                src="{{ asset('theme/falcon.png') }}" alt="" width="40" /><span
+                                class="font-sans-serif">falcon</span></div>
                     </a>
                     <div class="collapse navbar-collapse scrollbar" id="navbarStandard">
                         <ul class="navbar-nav" data-top-nav-dropdowns="data-top-nav-dropdowns">
@@ -698,8 +674,8 @@
                                     <div class="card navbar-card-app shadow-none dark__bg-1000">
                                         <div class="card-body scrollbar max-h-dropdown">
                                             <img class="img-dropdown"
-                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/spot-illustrations/authentication-corner.png"
-                                                width="130" alt="" />
+                                                src="{{ asset('theme/authentication-corner.png') }}" width="130"
+                                                alt="" />
                                             <div class="row">
                                                 <div class="col-6 col-md-5">
                                                     <div class="nav flex-column">
@@ -790,8 +766,8 @@
                                     <div class="card navbar-card-pages shadow-none dark__bg-1000">
                                         <div class="card-body scrollbar max-h-dropdown">
                                             <img class="img-dropdown"
-                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/spot-illustrations/authentication-corner.png"
-                                                width="130" alt="" />
+                                                src="{{ asset('theme/authentication-corner.png') }}" width="130"
+                                                alt="" />
                                             <div class="row">
                                                 <div class="col-6 col-xxl-3">
                                                     <div class="nav flex-column">
@@ -950,8 +926,8 @@
                                     <div class="card navbar-card-components shadow-none dark__bg-1000">
                                         <div class="card-body scrollbar max-h-dropdown">
                                             <img class="img-dropdown"
-                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/spot-illustrations/authentication-corner.png"
-                                                width="130" alt="" />
+                                                src="{{ asset('theme/authentication-corner.png') }}" width="130"
+                                                alt="" />
                                             <div class="row">
                                                 <div class="col-6 col-xxl-3">
                                                     <div class="nav flex-column">
@@ -1273,7 +1249,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-2xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/team/1-thumb.png"
+                                                                src="{{ asset('theme/1-thumb.png') }}"
                                                                 alt="" />
                                                         </div>
                                                     </div>
@@ -1311,7 +1287,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-2xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/icons/weather-sm.jpg"
+                                                                src="{{ asset('theme/weather-sm.jpg') }}"
                                                                 alt="" />
                                                         </div>
                                                     </div>
@@ -1331,7 +1307,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/logos/oxford.png"
+                                                                src="{{ asset('theme/oxford.png') }}"
                                                                 alt="" />
                                                         </div>
                                                     </div>
@@ -1350,8 +1326,7 @@
                                                     <div class="notification-avatar">
                                                         <div class="avatar avatar-xl me-3">
                                                             <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/team/10.jpg"
-                                                                alt="" />
+                                                                src="{{ asset('theme/10.jpg') }}" alt="" />
                                                         </div>
                                                     </div>
                                                     <div class="notification-body">
@@ -1407,8 +1382,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="pages/user/profile.html" target="_blank">
                                                         <div class="avatar avatar-2xl"> <img class="rounded-circle"
-                                                                src="https://prium.github.io/falcon/v3.13.0/assets/img/team/3.jpg"
-                                                                alt="" /></div>
+                                                                src="{{ asset('theme/3.jpg') }}" alt="" />
+                                                        </div>
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2">Account
                                                         </p>
                                                     </a>
@@ -1417,7 +1392,7 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="https://themewagon.com/" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/themewagon.png"
+                                                            src="{{ asset('theme/themewagon.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Themewagon
@@ -1428,7 +1403,7 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="https://mailbluster.com/" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/mailbluster.png"
+                                                            src="{{ asset('theme/mailbluster.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Mailbluster
@@ -1438,8 +1413,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/google.png"
+                                                        <img class="rounded" src="{{ asset('theme/google.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Google
@@ -1449,8 +1423,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/spotify.png"
+                                                        <img class="rounded" src="{{ asset('theme/spotify.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Spotify
@@ -1460,8 +1433,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/steam.png"
+                                                        <img class="rounded" src="{{ asset('theme/steam.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Steam
@@ -1472,7 +1444,7 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/github-light.png"
+                                                            src="{{ asset('theme/github-light.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Github
@@ -1482,8 +1454,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/discord.png"
+                                                        <img class="rounded" src="{{ asset('theme/discord.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Discord
@@ -1493,8 +1464,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/xbox.png"
+                                                        <img class="rounded" src="{{ asset('theme/xbox.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             xbox
@@ -1504,8 +1474,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/trello.png"
+                                                        <img class="rounded" src="{{ asset('theme/trello.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Kanban
@@ -1515,8 +1484,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/hp.png"
+                                                        <img class="rounded" src="{{ asset('theme/hp.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">Hp
                                                         </p>
@@ -1529,8 +1497,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/linkedin.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/linkedin.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Linkedin
                                                         </p>
@@ -1539,8 +1507,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/twitter.png"
+                                                        <img class="rounded" src="{{ asset('theme/twitter.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Twitter
@@ -1551,8 +1518,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/facebook.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/facebook.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Facebook
                                                         </p>
@@ -1562,8 +1529,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/instagram.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/instagram.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Instagram
                                                         </p>
@@ -1573,8 +1540,8 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/pinterest.png"
-                                                            alt="" width="40" height="40" />
+                                                            src="{{ asset('theme/pinterest.png') }}" alt=""
+                                                            width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Pinterest
                                                         </p>
@@ -1583,8 +1550,7 @@
                                                 <div class="col-4">
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
-                                                        <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/slack.png"
+                                                        <img class="rounded" src="{{ asset('theme/slack.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Slack
@@ -1595,7 +1561,7 @@
                                                     <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
                                                         href="#!" target="_blank">
                                                         <img class="rounded"
-                                                            src="https://prium.github.io/falcon/v3.13.0/assets/img/nav-icons/deviantart.png"
+                                                            src="{{ asset('theme/deviantart.png') }}"
                                                             alt="" width="40" height="40" />
                                                         <p class="mb-0 fw-medium text-800 text-truncate fs--2 pt-1">
                                                             Deviantart
@@ -1627,8 +1593,7 @@
                             <a class="nav-link pe-0 ps-2" id="navbarDropdownUser" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="avatar avatar-xl">
-                                    <img class="rounded-circle"
-                                        src="https://prium.github.io/falcon/v3.13.0/assets/img/team/3-thumb.png"
+                                    <img class="rounded-circle" src="{{ asset('theme/3-thumb.png') }}"
                                         alt="" />
                                 </div>
                             </a>
@@ -1690,7 +1655,7 @@
                 </script>
 
                 @yield('content')
-                
+
                 <footer class="footer">
                     <div class="row g-0 justify-content-between fs--1 mt-4 mb-3">
                         <div class="col-12 col-sm-auto text-center">
@@ -1716,16 +1681,16 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/popper/popper.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/anchorjs/anchor.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/is/is.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/echarts/echarts.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/fontawesome/all.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/lodash/lodash.min.js"></script>
+    <script src="{{ asset('crm/vendor/js/popper.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/bootstrap_5.2.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/anchor.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/is.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/echarts.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/all_Font_Awesome5_15_4.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/lodash.min.js') }}"></script>
+    <script src="{{ asset('crm/vendor/js/list.min.js') }}"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/vendors/list.js/list.min.js"></script>
-    <script src="https://prium.github.io/falcon/v3.13.0/assets/js/theme.js"></script>
+    <script src="{{ asset('crm/vendor/js/theme.js') }}"></script>
 </body>
 
 </html>

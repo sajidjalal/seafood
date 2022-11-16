@@ -220,4 +220,10 @@ class Controller extends BaseController
             ], 200);
         }
     }
+
+    public function theme()
+    {
+        $data['page_title'] = 'theme';
+        return view('crm.admin.home.theme', $data);
+    }
 }

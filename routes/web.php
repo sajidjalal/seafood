@@ -36,9 +36,11 @@ Route::get('/distribution', [Controller::class, 'distribution'])->name('distribu
 
 
 Auth::routes();
-// Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
-// });
+});
 
 Route::post('/contact-register', [Controller::class, 'contact_register'])->name('contact-register');
 Route::get('/mail-test', [HomeController::class, 'mail_test']);
+
+Route::get('/theme', [Controller::class, 'theme'])->name('theme');

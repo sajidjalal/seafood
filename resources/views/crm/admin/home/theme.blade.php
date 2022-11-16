@@ -751,7 +751,7 @@
                 </div>
                 <div class="card-body d-flex flex-center flex-column">
                     <!-- Find the JS file for the following chart at: src/js/charts/echarts/bandwidth-saved.js-->
-                    <!-- If you are not using gulp based workflow, you can find the transpiled code at: public/assets/js/theme.js-->
+                    <!-- If you are not using gulp based workflow, you can find the transpiled code at: public/v3.13.0/assets/js/theme.js-->
                     <div class="echart-bandwidth-saved" data-echart-responsive="true"></div>
                     <div class="text-center mt-3">
                         <h6 class="fs-0 mb-1"><span class="fas fa-check text-success me-1"
