@@ -22,10 +22,13 @@ class CreateMailLogTable extends Migration
             $table->string('subject', 50)->nullable();
             $table->longText('data');
             $table->tinyInteger('status')->default(0)->nullable();
+            $table->string('remark', 50)->nullable();
+            $table->date('sent_at')->nullable();
 
+            $table->unsignedInteger('created_by')->default(0);
             $table->timestamps();
 
-            $table->index('id');
+            $table->index('id', 'user_id');
         });
     }
 

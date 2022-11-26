@@ -74,7 +74,7 @@
                             <div class="col smd2 gutter">
                                 <span><i class="fa fa-envelope-open"></i>
                                     <span class="wpcf7-form-control-wrap email">
-                                        <input type="email" name="email_id" value="" size="40"
+                                        <input type="email" name="email" value="" size="40"
                                             class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email fieldset"
                                             placeholder="Email Address" required>
                                     </span>

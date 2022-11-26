@@ -24,6 +24,11 @@ if (!defined('SCRIPT_VERSION')) {
     define("ADMIN_WHATSAPP_LINK_WITH_MSG", 'https://api.whatsapp.com/send?phone=919960157383&text=hi');
     define("ADMIN_WHATSAPP_LINK", 'https://api.whatsapp.com/send?phone=919960157383');
 
-   
+    define("SHOWDATEFORMAT","d-m-Y");
+    define("GOBACK","Go Back");
+    
+    define("CODE_200","200");
+    define("CODE_422","422");
+
     
 }

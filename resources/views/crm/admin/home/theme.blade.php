@@ -1,4 +1,4 @@
-@extends('layouts.crm.app')
+@extends('layouts.crm.theme_app')
 
 @section('content')
     <div class="row g-3 mb-3">

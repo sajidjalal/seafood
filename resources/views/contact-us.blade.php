@@ -63,8 +63,8 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="email_id">Email Address</label>
-                                <input type="email" class="form-control" id="email_id" placeholder="Enter email"
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email"
                                     required>
                             </div>
                         </div>

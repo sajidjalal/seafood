@@ -66,13 +66,13 @@ function mail_sending_helper($data, $file = "")
         if (env('APP_ENV') == 'prod') {
             if ($file) {
                 Mail::send($data['template_name'], ['user_mail_data' => $data], function ($message) use ($data, $file) {
-                    $email = (env('APP_ENV') == 'prod') ? $data['email_id'] : env('MAIL_TO');
+                    $email = (env('APP_ENV') == 'prod') ? $data['email'] : env('MAIL_TO');
                     $message->to($email)->subject(ucwords($data['subject']));
                     $message->attach($file);
                 });
             } else {
                 Mail::send($data['template_name'], ['user_mail_data' => $data], function ($message) use ($data) {
-                    $email = (env('APP_ENV') == 'prod') ? $data['email_id'] : env('MAIL_TO');
+                    $email = (env('APP_ENV') == 'prod') ? $data['email'] : env('MAIL_TO');
                     $message->to($email)->subject(ucwords($data['subject']));
                 });
             }

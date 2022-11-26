@@ -21,14 +21,16 @@ class AdminDummyLoginSeeder extends Seeder
         if (!$result) {
             $dummy_entry =  array(
                 // 'id' => '1',
-                'name'  => 'Sajid Jalal',
+                'first_name'  => 'Sajid',
+                'last_name'  => 'Jalal',
                 'email' => 'info@admin.com',
                 'email_verified_at' => now(),
                 'password' => Hash::make("Admin@1212"),
-                'mobile' => 9999999999,
+                'mobile_number' => 9999999999,
                 'remember_token' => NULL,
                 'created_at' => now(),
                 'updated_at' => NULL,
+                'role'  => 1,
                 'status' => 1
             );
             UsersModel::create($dummy_entry);
