@@ -34,6 +34,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return   redirect('mail-list');
         $data['page_title'] = 'Home';
         return view('crm.admin.home.home', $data);
     }
@@ -50,12 +51,13 @@ class HomeController extends Controller
         if ($request->ajax()) {
 
             $data = UsersModel::select([DB::raw("ROW_NUMBER() OVER() AS sr_no ,CONCAT(first_name,' ',middle_name,' ',last_name) as name"), 'email', 'created_at', 'id'])
+                ->where('id' ,'!=', 1)
                 ->orderBy('id', 'desc')
                 ->get();
 
             return Datatables::of($data)
                 ->addColumn('created_at', function ($row) {
-                    $created_date = Carbon::parse($row->created_at)->format(SHOWDATEFORMAT);
+                    $created_date = Carbon::parse($row->created_at)->format(SHOW_DATE_FORMAT);
                     return $created_date;
                 })
                 ->addColumn('action', function ($row) {
@@ -249,12 +251,14 @@ class HomeController extends Controller
 
                 $login_user = Auth::user();
                 foreach ($request->user_list as $key => $user_id) {
+
+                    $mail_data['mail_body'] = $request->mail_body;
                     $user_data =  UsersModel::find($user_id);
                     $fields = [
                         "user_id"   => $user_id,
                         "email_to"  => $user_data->email ?? "",
-                        "data"      => $request->mail_body,
-                        "template_name" => "quout_mail",
+                        "data"      => json_encode($mail_data),
+                        "template_name" => "emails.quout_mail_template",
                         "subject"   => $request->subject,
                     ];
 
@@ -297,18 +301,19 @@ class HomeController extends Controller
         if ($request->ajax()) {
 
             $data = EmailLogModel::select([DB::raw("ROW_NUMBER() OVER() AS sr_no "), 'email_to', 'subject', 'created_at', 'id', 'sent_at', 'status'])
+                ->where('template_name', 'emails.quout_mail_template')
                 ->orderBy('id', 'desc')
                 ->get();
 
             return Datatables::of($data)
                 ->addColumn('created_at', function ($row) {
-                    $created_date = Carbon::parse($row->created_at)->format(SHOWDATEFORMAT);
+                    $created_date = Carbon::parse($row->created_at)->format(SHOW_FULL_DATE_FORMAT);
                     return $created_date;
                 })
                 ->addColumn('sent_at', function ($row) {
                     $sent_at = "";
                     if ($row->sent_at) {
-                        $sent_at = Carbon::parse($row->sent_at)->format(SHOWDATEFORMAT);
+                        $sent_at = Carbon::parse($row->sent_at)->format(SHOW_FULL_DATE_FORMAT);
                     }
                     return $sent_at;
                 })
@@ -335,7 +340,7 @@ class HomeController extends Controller
         $mail_data = [];
         $mail_data['user_data']  = $pos_profile;
         $mail_data['user_type']  = "pos";
-        $mail_data['email']   = $request->mail_id ?? "sajidjalal@gmail.com";
+        $mail_data['email_to']   = $request->mail_id ?? "sajidjalal@gmail.com";
         $mail_data['template_name'] = "emails.myTestMail";
         $mail_data['subject']       =  "Mail test";
         $mail_data['certificate_date'] =  date('Y-m-d');

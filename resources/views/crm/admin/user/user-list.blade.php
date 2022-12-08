@@ -41,8 +41,8 @@
                         name: 'name'
                     },
                     {
-                        data: 'email_to',
-                        name: 'email_to'
+                        data: 'email',
+                        name: 'email'
                     },
                     {
                         data: 'action',

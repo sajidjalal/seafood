@@ -56,7 +56,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::post('/contact-register', [Controller::class, 'contactRegister'])->name('contact-register');
 Route::post('/is_email_exists', [Controller::class, 'isEmailExists'])->name('is_email_exists');
-Route::get('/get-city-state', [Controller::class, 'getCityState'])->name('get-city-state');
+Route::get('/get-city-state/{pincode?}', [Controller::class, 'getCityState'])->name('get-city-state');
 
 Route::get('/mail-test', [HomeController::class, 'mail_test']);
 

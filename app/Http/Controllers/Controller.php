@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactUsModel;
+use App\Models\EmailLogModel;
 use App\Models\MasterPincodeModel;
 use App\Models\Model\ProductCategoriesModel;
 use App\Models\Model\ProductMasterModel;
@@ -208,14 +209,14 @@ class Controller extends BaseController
 
             $user = ContactUsModel::create($fields);
 
-            $mail_data = [];
-            $mail_data['user_id'] = $user->id;
-            $mail_data['user_mail_data']  = $fields;
-            $mail_data['user_type']  = 0;
-            $mail_data['email_to'] = $request->email;
-            $mail_data['template_name'] = "emails.contact_us_mail";
-            $mail_data['subject'] =  "User Contact us";
-            mail_sending_helper($mail_data);
+
+            $mail_log_data['user_id'] = $user->id;
+            $mail_log_data['template_name'] = "emails.contact_us_mail";
+            $mail_log_data['email_to'] = $request->email;
+            $mail_log_data['subject'] = "User Contact us";
+            $mail_log_data['data'] = json_encode($fields);
+
+            EmailLogModel::create($mail_log_data);
 
             return response()->json([
                 'status' => true, 'message' => 'Request Sent Successfully.'
@@ -248,7 +249,7 @@ class Controller extends BaseController
         return $status;
     }
 
-    public function getCityState(Request $request)
+    public function getCityState(Request $request, $pincode= "")
     {
         $rules = [
             'pincode' => 'required|numeric',
@@ -264,7 +265,11 @@ class Controller extends BaseController
         } else {
 
             try {
-                $pincode_details = MasterPincodeModel::with('state', 'city')->where('pincode', $request->pincode)->first();
+                $serach_value = $request->pincode;
+                if(isset($pincode)){
+                    $serach_value = $pincode;
+                }
+                $pincode_details = MasterPincodeModel::with('state', 'city')->where('pincode', $serach_value)->first();
 
                 if ($pincode_details) {
 

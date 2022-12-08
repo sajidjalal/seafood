@@ -47,7 +47,7 @@ $(".pincode").keyup(function (e) {
 
 function get_Pincode(pincode) {
     $.ajax({
-        url: "/get-city-state?pincode=" + pincode,
+        url: "/get-city-state/" + pincode,
         data: {},
         processData: false,
         contentType: false,

@@ -62,33 +62,32 @@ function mail_sending_helper($data, $file = "")
 {
 
     $status = NULL;
+    $mail_log_data['status'] = $status;
     try {
-        if (env('APP_ENV') == 'prod') {
+        // if (env('APP_ENV') == 'prod') {
             if ($file) {
                 Mail::send($data['template_name'], ['user_mail_data' => $data], function ($message) use ($data, $file) {
                     $email = (env('APP_ENV') == 'prod') ? $data['email'] : env('MAIL_TO');
                     $message->to($email)->subject(ucwords($data['subject']));
+                    $message->setContentType('text/html');
                     $message->attach($file);
                 });
             } else {
                 Mail::send($data['template_name'], ['user_mail_data' => $data], function ($message) use ($data) {
                     $email = (env('APP_ENV') == 'prod') ? $data['email'] : env('MAIL_TO');
                     $message->to($email)->subject(ucwords($data['subject']));
+                    $message->setContentType('text/html');
                 });
             }
-        }
-        $status = '1';
+        // }
+        $mail_log_data['status'] = 1;
+        $mail_log_data['sent_at'] = now();
+        EmailLogModel::where('id', $data['id'])->update($mail_log_data);
+
     } catch (\Exception $e) {
         $status = '0';
         Log::critical("Helpers::mail_sending_helper");
         Log::critical($e);
     }
 
-    $mail_log_data['user_id'] = $data['user_data']['id'] ?? 0;
-    $mail_log_data['template_name'] = $data['template_name'];
-    $mail_log_data['email_to'] = $data['email_to'];
-    $mail_log_data['subject'] = $data['subject'];
-    $mail_log_data['data'] = json_encode($data);
-    $mail_log_data['status'] = $status;
-    return EmailLogModel::create($mail_log_data);
 }

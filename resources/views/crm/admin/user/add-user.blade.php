@@ -224,6 +224,7 @@
                                 text: response.message,
                                 icon: "success",
                             });
+                            location.reload();
                         },
                         error: function(xhr, status, error) {
                             var e = JSON.parse(xhr.responseText);
