@@ -1,0 +1,40 @@
+id,state_id,state_name,state_code,sequence,status
+1,1,Telangana,TELA,1,1
+2,2,Delhi,DELH,1,1
+3,3,Gujrat,GUJA,1,1
+4,4,Karnataka,KARN,1,1
+5,5,Maharashtra,MAHA,1,1
+6,6,Tamil Nadu,TN,1,1
+7,7,West Bengal,WB,1,1
+8,8,Andaman Nicobar,ANDA,1,1
+9,9,Andhra Pradesh,ANDH,1,1
+10,10,Arunachal Pradesh ,ARUN,1,1
+11,11,Assam,ASSM,1,1
+12,12,Bihar,BIHA,1,1
+13,13,Chandigarh,CHAN,1,1
+14,14,Chhattisgarh,CHHA,1,1
+15,15,Dadra and Nagar Haveli,DNH,1,1
+16,16,Daman and Diu,DAD,1,1
+17,17,Goa,GOA,1,1
+18,18,Gujarat,GUJA,1,1
+19,19,Haryana,HARY,1,1
+20,20,Himachal Pradesh,HP,1,1
+21,21,Jammu and Kashmir,JAK,1,1
+22,22,Jharkhand,JHAR,1,1
+23,23,Kerala,KERA,1,1
+24,24,Lakshadweep,LAKS,1,1
+25,25,Madhya Pradesh,MP,1,1
+26,26,Manipur,MANI,1,1
+27,27,Meghalaya,MEGH,1,1
+28,28,Mizoram,MIZO,1,1
+29,29,Nagaland,NAGA,1,1
+30,30,Odisha,ODIS,1,1
+31,31,Orissa,ORIS,1,1
+32,32,Puducherry,POND,1,1
+33,33,Punjab,PUNJ,1,1
+34,34,Rajasthan,RAJA,1,1
+35,35,Sikkim,SIKK,1,1
+36,36,Tripura,TRIP,1,1
+37,37,Uttarakhand,UTTA,1,1
+38,38,Uttar Pradesh,UP,1,1
+39,39,Uttaranchal,UTTARANCHAL,1,1

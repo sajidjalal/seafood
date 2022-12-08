@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
@@ -36,9 +37,27 @@ Route::get('/distribution', [Controller::class, 'distribution'])->name('distribu
 
 
 Auth::routes();
-// Route::group(['middleware' => ['auth']], function () {
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
-// });
+    Route::get('/user-list', [HomeController::class, 'userList'])->name('user-list');
+    Route::get('/user-list-api', [HomeController::class, 'userListApi'])->name('user-list-api');
+    Route::get('/get-all-users', [HomeController::class, 'getAllUsers'])->name('get-all-users');
+    
+    Route::get('/add-user', [HomeController::class, 'addUser'])->name('add-user');
+    Route::get('/edit-user/{id}', [HomeController::class, 'editUser'])->name('edit-user');
+    Route::post('/user-register', [HomeController::class, 'userRegister'])->name('user-register');
+    
+    Route::get('/compose-mail', [HomeController::class, 'mailCompose'])->name('compose-mail');
+    Route::post('/mail-send', [HomeController::class, 'sendMail'])->name('mail-send');
+    Route::get('/mail-list', [HomeController::class, 'mailList'])->name('mail-list');
+    Route::get('/mail-list-api', [HomeController::class, 'mailListApi'])->name('mail-list-api');
+});
 
-Route::post('/contact-register', [Controller::class, 'contact_register'])->name('contact-register');
+Route::post('/contact-register', [Controller::class, 'contactRegister'])->name('contact-register');
+Route::post('/is_email_exists', [Controller::class, 'isEmailExists'])->name('is_email_exists');
+Route::get('/get-city-state/{pincode?}', [Controller::class, 'getCityState'])->name('get-city-state');
+
 Route::get('/mail-test', [HomeController::class, 'mail_test']);
+
+Route::get('/theme-view', [Controller::class, 'theme_view'])->name('theme-view');

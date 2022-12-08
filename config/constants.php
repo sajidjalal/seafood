@@ -5,6 +5,7 @@ if (!defined('SCRIPT_VERSION')) {
     define("COMPANY_NAME", 'Aiza Seafood');
     define("COMPANY_FULL_NAME", 'Aiza Seafood');
     define("SCRIPT_VERSION", (env('APP_ENV') == 'prod') ? '04:07:2022|2.1.1' : rand());
+    define("LOGO", 'new_look/images/logo.jpeg');
 
     // CONTACTS
     define("CONTACT_ADDRESS", 'Address: Plot No E-23, Near Prime Mall. Sector 12, Kharghar, Kharghar, Raigarh, Panvel, Maharashtra, 410210');
@@ -24,6 +25,13 @@ if (!defined('SCRIPT_VERSION')) {
     define("ADMIN_WHATSAPP_LINK_WITH_MSG", 'https://api.whatsapp.com/send?phone=919960157383&text=hi');
     define("ADMIN_WHATSAPP_LINK", 'https://api.whatsapp.com/send?phone=919960157383');
 
-   
+    define("SHOW_DATE_FORMAT","d-m-Y");
+    define("SHOW_FULL_DATE_FORMAT","d-m-Y h:i:s");
+    define("GOBACK","Go Back");
+    
+    define("CODE_200","200");
+    define("CODE_422","422");
+
+    define('MAIL_TO', 'sajidjalal@gmaill.com');
     
 }

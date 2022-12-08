@@ -19,13 +19,16 @@ class CreateMailLogTable extends Migration
             $table->integer('user_id')->unsigned()->nullable();
             $table->string('email_to', 50)->nullable();
             $table->string('template_name', 50)->nullable();
-            $table->string('subject', 50)->nullable();
+            $table->string('subject', 250)->nullable();
             $table->longText('data');
             $table->tinyInteger('status')->default(0)->nullable();
+            $table->string('remark', 50)->nullable();
+            $table->date('sent_at')->nullable();
 
+            $table->unsignedInteger('created_by')->default(0);
             $table->timestamps();
 
-            $table->index('id');
+            $table->index('id', 'user_id');
         });
     }
 
