@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/compose-mail', [HomeController::class, 'mailCompose'])->name('compose-mail');
     Route::post('/mail-send', [HomeController::class, 'sendMail'])->name('mail-send');
     Route::get('/mail-list', [HomeController::class, 'mailList'])->name('mail-list');
-    Route::get('/mail-list-api', [HomeController::class, 'mailListApi'])->name('mail-list-api');
+    Route::post('/mail-list-api', [HomeController::class, 'mailListApi'])->name('mail-list-api');
 });
 
 Route::post('/contact-register', [Controller::class, 'contactRegister'])->name('contact-register');
