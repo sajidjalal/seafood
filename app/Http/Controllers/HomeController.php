@@ -51,7 +51,7 @@ class HomeController extends Controller
         if ($request->ajax()) {
 
             $data = UsersModel::select([DB::raw("ROW_NUMBER() OVER() AS sr_no ,CONCAT(first_name,' ',middle_name,' ',last_name) as name"), 'email', 'created_at', 'id'])
-                ->where('id' ,'!=', 1)
+                ->where('id', '!=', 1)
                 ->orderBy('id', 'desc')
                 ->get();
 
@@ -297,39 +297,38 @@ class HomeController extends Controller
 
     public function mailListApi(Request $request)
     {
+        $params['draw'] = $request->has('draw') ? $request->draw : 1;
 
-        if ($request->ajax()) {
+        $user_info = Auth::user();
+        $user_list = [];
+        $results = mailStatusList($request, false, $user_list);
+        $totalRecords = mailStatusList($request, true, $user_list);
 
-            $data = EmailLogModel::select([DB::raw("ROW_NUMBER() OVER() AS sr_no "), 'email_to', 'subject', 'created_at', 'id', 'sent_at', 'status'])
-                ->where('template_name', 'emails.quout_mail_template')
-                ->orderBy('id', 'desc')
-                ->get();
+        $response_array = [];
+        foreach ($results as $key => $result) {
 
-            return Datatables::of($data)
-                ->addColumn('created_at', function ($row) {
-                    $created_date = Carbon::parse($row->created_at)->format(SHOW_FULL_DATE_FORMAT);
-                    return $created_date;
-                })
-                ->addColumn('sent_at', function ($row) {
-                    $sent_at = "";
-                    if ($row->sent_at) {
-                        $sent_at = Carbon::parse($row->sent_at)->format(SHOW_FULL_DATE_FORMAT);
-                    }
-                    return $sent_at;
-                })
-                ->addColumn('status', function ($row) {
-                    return $row->status == 0 ? "Pending" : "Sent";
-                })
-                ->addColumn('action', function ($row) {
-                    $html = "";
-                    $html .=  "<a href= " . route('edit-user', ['id' => $row->id]) . " rel='noopener noreferrer' class='btn btn-sm btn-primary font-weight-bolder'> Edit</a>";
 
-                    return $html;
-                })
-                ->rawColumns(['created_at', 'action', 'sent_at', 'status'])
-                ->addIndexColumn()
-                ->make(true);
+            $response_array[$key]['sr_no']      = $key + 1;
+            $response_array[$key]['id']         = $result->id;
+            $response_array[$key]['subject']    = ucwords($result->subject);
+            $response_array[$key]['status']     = $result->status;
+            $response_array[$key]['email_to']   = $result->email_to;
+            $response_array[$key]['sent_at']    = "";
+            if ($result->sent_at) {
+                $response_array[$key]['sent_at']  = Carbon::parse($result->sent_at)->format(SHOW_FULL_DATE_FORMAT);
+            }
+            $response_array[$key]['status']     =   $result->status == 0 ? "Pending" : "Sent";
+            $response_array[$key]['status']     =  "<a href= " . route('edit-user', ['id' => $result->id]) . " rel='noopener noreferrer' class='btn btn-sm btn-primary font-weight-bolder'> Edit</a>";
+            $response_array[$key]['created_at'] = $result->created_at ? Carbon::parse($result->created_at)->format(SHOW_FULL_DATE_FORMAT) : "";
         }
+
+        $json_data = array(
+            "draw"            => intval($params['draw']),
+            "recordsTotal"    => intval($totalRecords),
+            "recordsFiltered" => intval($totalRecords),
+            "data"            => $response_array
+        );
+        return response()->json($json_data);
     }
 
 
