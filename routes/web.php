@@ -54,6 +54,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/mail-list-api', [HomeController::class, 'mailListApi'])->name('mail-list-api');
 });
 
+Route::get('/send-mail-cron', [Controller::class, 'send_mail_cron'])->name('send-mail-cron');
+
 Route::post('/contact-register', [Controller::class, 'contactRegister'])->name('contact-register');
 Route::post('/is_email_exists', [Controller::class, 'isEmailExists'])->name('is_email_exists');
 Route::get('/get-city-state/{pincode?}', [Controller::class, 'getCityState'])->name('get-city-state');

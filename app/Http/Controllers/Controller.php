@@ -13,6 +13,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
 use function PHPUnit\Framework\isEmpty;
@@ -315,5 +316,32 @@ class Controller extends BaseController
     {
         $data['page_title'] = 'theme';
         return view('crm.admin.home.theme', $data);
+    }
+
+    public function send_mail_cron()
+    {
+        Log::critical("Controller::send_mail_cron");
+        Log::critical(now());
+        $result =  EmailLogModel::where([
+            // 'template_name' => "emails.quout_mail_template",
+            'status' => 0,
+        ])->get();
+
+        foreach ($result as $key => $row) {
+            $mail_body = json_decode($row['data'], true);
+
+            $mail_data = [];
+            $mail_data['id']        =  $row['id'];
+            $mail_data['user_data'] =  $row['data'];
+            $mail_data['user_id']   =  $row['user_id'];
+            $mail_data['email_to']  = $row['mail_id'] ?? "sajidjalal@gmail.com";
+            $mail_data['template_name'] = $row['template_name'];
+            $mail_data['subject']   =  $row['subject'];
+            $mail_data['mail_body'] =  $mail_body['mail_body'] ?? "";
+
+            // return view($row['template_name'], $mail_data);
+
+            mail_sending_helper($mail_data);
+        }
     }
 }
