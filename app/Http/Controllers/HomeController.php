@@ -348,6 +348,7 @@ class HomeController extends Controller
         $mail_data['user_data']         = $pos_profile;
         $mail_data['user_type']         = "pos";
         $mail_data['email_to']          = isset($request->email_to) ?? "sajidjalal@gmail.com";
+        $mail_data['email']             = isset($request->email_to) ?? "sajidjalal@gmail.com";
         $mail_data['template_name']     = "emails.myTestMail";
         $mail_data['subject']           =  "Mail test";
         $mail_data['certificate_date']  =  date('Y-m-d');

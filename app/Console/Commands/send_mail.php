@@ -57,6 +57,7 @@ class send_mail extends Command
                 $mail_data['user_data'] =  $row['data'];
                 $mail_data['user_id']   =  $row['user_id'];
                 $mail_data['email_to']  = $row['mail_id'] ?? "sajidjalal@gmail.com";
+                $mail_data['email']  = $row['mail_id'] ?? "sajidjalal@gmail.com";
                 $mail_data['template_name'] = $row['template_name'];
                 $mail_data['subject']   =  $row['subject'];
                 $mail_data['mail_body'] =  $mail_body['mail_body'] ?? "";
