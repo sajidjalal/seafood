@@ -3,3 +3,7 @@
     color: red;
     font-size: 10px;
 }
+
+.dataTables_wrapper .row {
+    margin-top: 1%;
+}

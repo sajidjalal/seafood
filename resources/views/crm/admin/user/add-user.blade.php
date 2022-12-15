@@ -26,12 +26,13 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label class="form-label" for="password">Password</label>
-                                    <input class="form-control" id="password" name="password" type="password" />
+                                    <input class="form-control" id="password" name="password" type="password"
+                                        autocomplete="off" />
                                 </div>
                                 <div class="col-md-3">
                                     <label class="form-label" for="confirm_password">Confirm Password</label>
-                                    <input class="form-control" id="confirm_password" name="confirm_password"
-                                        type="text" />
+                                    <input class="form-control" id="confirm_password" name="confirm_password" type="text"
+                                        autocomplete="off" />
                                 </div>
                                 <div class="col-md-4">
                                     <label class="form-label" for="first_name">First Name</label>

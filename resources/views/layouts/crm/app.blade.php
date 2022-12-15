@@ -35,6 +35,7 @@
     <link href="{{ asset('crm/vendor/css/user.min.css') }}" rel="stylesheet" id="user-style-default">
     <link href="{{ asset('crm/vendor/css/choices.min.css') }}" rel="stylesheet" id="user-select-default">
     <link href="{{ asset('crm/vendor/css/sweetalert2.min.cs') }}" rel="stylesheet" id="user-select-default">
+    <link href="{{ asset('crm/vendor/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" id="user-common-style">
     <link href="{{ asset('css/common.css') }}" rel="stylesheet" id="user-common-style">
 
     <script src="{{ asset('crm/vendor/js/jquery.js') }}"></script>

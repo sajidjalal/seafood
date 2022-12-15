@@ -1,7 +1,9 @@
 <?php
 
 use App\Models\EmailLogModel;
+use App\Models\UsersModel;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
@@ -108,9 +110,8 @@ function mailStatusList($request,  $limit = false, $user_list = "")
         if (isset($request->search['value'])) {
             $search = $request->search['value'];
             $query->where(function ($query_append) use ($search) {
-                $query_append->where('user_role', 'like', '%' . $search . '%')
-                    ->orWhere('status', 'like', '%' . $search . '%')
-                    ->orWhere('email', 'like', '%' . $search . '%')
+                $query_append->where('subject', 'like', '%' . $search . '%')
+                    ->orWhere('email_to', 'like', '%' . $search . '%')
                     ->orWhere('sent_at', 'like', '%' . $search . '%')
                     ->orWhere('created_at', 'like', '%' . $search . '%');
             });
@@ -135,6 +136,54 @@ function mailStatusList($request,  $limit = false, $user_list = "")
         }
     } catch (\Exception $e) {
         Log::critical("helpers::mailStatusList");
+        Log::critical($e);
+    }
+}
+
+function userList($request,  $limit = false, $user_list = "")
+{
+    $start = $request->has('start') ? $request->start : 0;
+    $length = $request->has('length') ? $request->length : 10;
+    $params['draw'] = $request->has('draw') ? $request->draw : 1;
+    try {
+
+        $query = UsersModel::select([DB::raw("ROW_NUMBER() OVER() AS sr_no ,CONCAT(first_name,' ',middle_name,' ',last_name) as name"), 'email', 'created_at', 'status', 'id'])
+            ->where('id', '!=', 1);
+
+        if ($user_list) {
+            $query->whereIn('users.created_by',  $user_list);
+        }
+
+        if (isset($request->search['value'])) {
+            $search = $request->search['value'];
+            $query->where(function ($query_append) use ($search) {
+                $query_append->where('first_name', 'like', '%' . $search . '%')
+                    ->orWhere('middle_name', 'like', '%' . $search . '%')
+                    ->orWhere('last_name', 'like', '%' . $search . '%')
+                    ->orWhere('email', 'like', '%' . $search . '%')
+                    ->orWhere('created_at', 'like', '%' . $search . '%');
+            });
+        }
+
+        if (isset($request->order[0]['column'])) {
+            $columns = array('sr_no', 'email', 'status', 'created_at', 'sent_at', 'sent_at',);
+            $query->orderBy($columns[$request->order[0]['column']], $request->order[0]['dir']);
+        } else {
+            $query->orderBy('id', 'DESC');
+        }
+
+        if ($limit) {
+            return $query
+                ->get()
+                ->count();
+        } else {
+            return $query
+                ->offset($start)
+                ->limit($length)
+                ->get();
+        }
+    } catch (\Exception $e) {
+        Log::critical("helpers::userList");
         Log::critical($e);
     }
 }

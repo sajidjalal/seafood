@@ -41,7 +41,7 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/user-list', [HomeController::class, 'userList'])->name('user-list');
-    Route::get('/user-list-api', [HomeController::class, 'userListApi'])->name('user-list-api');
+    Route::post('/user-list-api', [HomeController::class, 'userListApi'])->name('user-list-api');
     Route::get('/get-all-users', [HomeController::class, 'getAllUsers'])->name('get-all-users');
     
     Route::get('/add-user', [HomeController::class, 'addUser'])->name('add-user');

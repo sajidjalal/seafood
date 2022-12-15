@@ -15,6 +15,8 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Validator;
 
+use function PHPUnit\Framework\isEmpty;
+
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -249,7 +251,7 @@ class Controller extends BaseController
         return $status;
     }
 
-    public function getCityState(Request $request, $pincode= "")
+    public function getCityState(Request $request, $pincode = "")
     {
         $rules = [
             'pincode' => 'required|numeric',
@@ -266,7 +268,7 @@ class Controller extends BaseController
 
             try {
                 $serach_value = $request->pincode;
-                if(isset($pincode)){
+                if (isset($pincode) && !isEmpty($pincode)) {
                     $serach_value = $pincode;
                 }
                 $pincode_details = MasterPincodeModel::with('state', 'city')->where('pincode', $serach_value)->first();

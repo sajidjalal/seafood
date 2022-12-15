@@ -48,28 +48,34 @@ class HomeController extends Controller
     public function userListApi(Request $request)
     {
 
-        if ($request->ajax()) {
+        $params['draw'] = $request->has('draw') ? $request->draw : 1;
 
-            $data = UsersModel::select([DB::raw("ROW_NUMBER() OVER() AS sr_no ,CONCAT(first_name,' ',middle_name,' ',last_name) as name"), 'email', 'created_at', 'id'])
-                ->where('id', '!=', 1)
-                ->orderBy('id', 'desc')
-                ->get();
+        $user_info = Auth::user();
+        $user_list = [];
+        $results = userList($request, false, $user_list);
+        $totalRecords = userList($request, true, $user_list);
 
-            return Datatables::of($data)
-                ->addColumn('created_at', function ($row) {
-                    $created_date = Carbon::parse($row->created_at)->format(SHOW_DATE_FORMAT);
-                    return $created_date;
-                })
-                ->addColumn('action', function ($row) {
-                    $html = "";
-                    $html .=  "<a href= " . route('edit-user', ['id' => $row->id]) . " rel='noopener noreferrer' class='btn btn-sm btn-primary font-weight-bolder'> Edit</a>";
+        $response_array = [];
+        if (count($results)) {
+            foreach ($results as $key => $result) {
+                $response_array[$key]['sr_no']      = $key + 1;
+                $response_array[$key]['id']         = $result->id;
+                $response_array[$key]['name']    = ucwords($result->name);
+                $response_array[$key]['email']   = $result->email;
 
-                    return $html;
-                })
-                ->rawColumns(['created_at', 'action'])
-                ->addIndexColumn()
-                ->make(true);
+                $response_array[$key]['status']     =   $result->status == 0 ? "Pending" : "Sent";
+                $response_array[$key]['action']     =  "<a href= " . route('edit-user', ['id' => $result->id]) . " rel='noopener noreferrer' class='btn btn-sm btn-primary font-weight-bolder'> Edit</a>";
+                $response_array[$key]['created_at'] = $result->created_at ? Carbon::parse($result->created_at)->format(SHOW_FULL_DATE_FORMAT) : "";
+            }
         }
+
+        $json_data = array(
+            "draw"            => intval($params['draw']),
+            "recordsTotal"    => intval($totalRecords),
+            "recordsFiltered" => intval($totalRecords),
+            "data"            => $response_array
+        );
+        return response()->json($json_data);
     }
 
     public function addUser()
@@ -100,7 +106,7 @@ class HomeController extends Controller
             ];
 
             if ($request->has('id')) {
-                $count = UsersModel::where('email', $request->email)->count();
+                $count = UsersModel::where('email', $request->email)->where('id', '!=', $request->id)->count();
                 if ($count > 0) {
                     $resposne['message'] = "Validation Error";
                     return response()->json([
@@ -305,21 +311,21 @@ class HomeController extends Controller
         $totalRecords = mailStatusList($request, true, $user_list);
 
         $response_array = [];
-        foreach ($results as $key => $result) {
-
-
-            $response_array[$key]['sr_no']      = $key + 1;
-            $response_array[$key]['id']         = $result->id;
-            $response_array[$key]['subject']    = ucwords($result->subject);
-            $response_array[$key]['status']     = $result->status;
-            $response_array[$key]['email_to']   = $result->email_to;
-            $response_array[$key]['sent_at']    = "";
-            if ($result->sent_at) {
-                $response_array[$key]['sent_at']  = Carbon::parse($result->sent_at)->format(SHOW_FULL_DATE_FORMAT);
+        if (count($results)) {
+            foreach ($results as $key => $result) {
+                $response_array[$key]['sr_no']      = $key + 1;
+                $response_array[$key]['id']         = $result->id;
+                $response_array[$key]['subject']    = ucwords($result->subject);
+                $response_array[$key]['status']     = $result->status;
+                $response_array[$key]['email_to']   = $result->email_to;
+                $response_array[$key]['sent_at']    = "";
+                if ($result->sent_at) {
+                    $response_array[$key]['sent_at']  = Carbon::parse($result->sent_at)->format(SHOW_FULL_DATE_FORMAT);
+                }
+                $response_array[$key]['status']     =   $result->status == 0 ? "Pending" : "Sent";
+                // $response_array[$key]['status']     =  "<a href= " . route('edit-user', ['id' => $result->id]) . " rel='noopener noreferrer' class='btn btn-sm btn-primary font-weight-bolder'> Edit</a>";
+                $response_array[$key]['created_at'] = $result->created_at ? Carbon::parse($result->created_at)->format(SHOW_FULL_DATE_FORMAT) : "";
             }
-            $response_array[$key]['status']     =   $result->status == 0 ? "Pending" : "Sent";
-            $response_array[$key]['status']     =  "<a href= " . route('edit-user', ['id' => $result->id]) . " rel='noopener noreferrer' class='btn btn-sm btn-primary font-weight-bolder'> Edit</a>";
-            $response_array[$key]['created_at'] = $result->created_at ? Carbon::parse($result->created_at)->format(SHOW_FULL_DATE_FORMAT) : "";
         }
 
         $json_data = array(
@@ -337,12 +343,17 @@ class HomeController extends Controller
         $pos_profile['id'] = 0;
 
         $mail_data = [];
-        $mail_data['user_data']  = $pos_profile;
-        $mail_data['user_type']  = "pos";
-        $mail_data['email_to']   = $request->mail_id ?? "sajidjalal@gmail.com";
-        $mail_data['template_name'] = "emails.myTestMail";
-        $mail_data['subject']       =  "Mail test";
-        $mail_data['certificate_date'] =  date('Y-m-d');
+        $mail_data['id']                = 0;
+        $mail_data['user_id']           = 0;
+        $mail_data['user_data']         = $pos_profile;
+        $mail_data['user_type']         = "pos";
+        $mail_data['email_to']          = isset($request->email_to) ?? "sajidjalal@gmail.com";
+        $mail_data['template_name']     = "emails.myTestMail";
+        $mail_data['subject']           =  "Mail test";
+        $mail_data['certificate_date']  =  date('Y-m-d');
+        $mail_data['mail_body']         =  $mail_body['mail_body'] ?? "";
+
+        // return view($mail_data['template_name'], $mail_data);
         mail_sending_helper($mail_data);
     }
 }
