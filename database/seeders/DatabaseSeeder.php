@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(MasterStateSeeder::class);
         $this->call(MasterCitySeeder::class);
-        // $this->call(PincodeMasterDataSeeder::class);
+        $this->call(PincodeMasterDataSeeder::class);
     }
 }

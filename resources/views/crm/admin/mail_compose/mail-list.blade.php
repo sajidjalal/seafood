@@ -27,8 +27,6 @@
             </div>
         </div>
     </div>
-    {{-- <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script> --}}
-
     <script type="text/javascript">
         $(window).on("load", function() {
             $("#mail_list").DataTable({
@@ -37,6 +35,7 @@
                 bSortable: true,
                 bRetrieve: true,
                 scrollX: true,
+                scrollY: '500px',
                 scrollCollapse: true,
                 fixedColumns: {
                     leftColumns: 1,
