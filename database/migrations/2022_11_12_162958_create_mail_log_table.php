@@ -23,7 +23,7 @@ class CreateMailLogTable extends Migration
             $table->longText('data');
             $table->tinyInteger('status')->default(0)->nullable();
             $table->string('remark', 50)->nullable();
-            $table->date('sent_at')->nullable();
+            $table->dateTime('sent_at')->nullable();
 
             $table->unsignedInteger('created_by')->default(0);
             $table->timestamps();
