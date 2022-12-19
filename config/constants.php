@@ -8,7 +8,7 @@ if (!defined('SCRIPT_VERSION')) {
     define("LOGO", 'new_look/images/logo.jpeg');
 
     // CONTACTS
-    define("CONTACT_ADDRESS", 'Address: Plot No E-23, Near Prime Mall. Sector 12, Kharghar, Kharghar, Raigarh, Panvel, Maharashtra, 410210');
+    define("CONTACT_ADDRESS", 'A 403, MUNEERA HEIGHTS PLOT 15 & 1, Sector 35, Kamothe, Navi Mumbai, 410209');
     define("CONTACT_NO", '+91-9960157383');
     define("CONTACT_NO_2", ''); // 9175183407
     define("CONTACT_EMAIL", 'info@aizaseafood.com');
