@@ -232,8 +232,7 @@
     <div class="main_border">
         <div style="position:relative; display:block; padding:20px; background-color: #fffafa;">
 
-            <img src="{{ asset(LOGO) }}"
-                style="position:relative; max-width:150px; height:auto; margin:0 auto 20px; padding:0; display:block;" />
+            {{-- <img src="{{ asset(LOGO) }}" style="position:relative; max-width:150px; height:auto; margin:0 auto 20px; padding:0; display:block;" /> --}}
 
             <div class="main_content">
                 @yield('content')
