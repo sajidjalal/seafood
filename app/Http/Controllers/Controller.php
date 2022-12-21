@@ -322,7 +322,7 @@ class Controller extends BaseController
     {
         Log::critical("Controller::send_mail_cron");
         Log::critical(now());
-        $result =  EmailLogModel::where([
+        $result =  EmailLogModel::with('document_details')->where([
             // 'template_name' => "emails.quout_mail_template",
             'status' => 0,
         ])->get();
@@ -338,11 +338,17 @@ class Controller extends BaseController
             $mail_data['email']     = $row['mail_id'] ?? "sajidjalal@gmail.com";
             $mail_data['template_name'] = $row['template_name'];
             $mail_data['subject']   =  $row['subject'];
+            $documents_id           =  $row['documents_id'] ? $row['documents_id'] : false;
             $mail_data['mail_body'] =  $mail_body['mail_body'] ?? "";
 
+            
+            if ($documents_id) {
+                mail_sending_helper($mail_data, $row['document_details']->name, false);
+            }else{
+                mail_sending_helper($mail_data);
+            }
             // return view($row['template_name'], $mail_data);
 
-            mail_sending_helper($mail_data);
         }
     }
 }

@@ -29,7 +29,7 @@ function uploadFile($file, $path, $disk, $ext = [])
     // }
 
     if ($ext) {
-        if (in_array($file->getClientOriginalExtension(), $ext)) {
+        if (in_array(strtolower($file->getClientOriginalExtension()), $ext)) {
             $path = $file->storeAs(
                 $path,
                 $file_name,
@@ -60,14 +60,18 @@ function folder_exist($folder_path)
     return (file_exists($folder_path) and is_dir($folder_path));
 }
 
-function mail_sending_helper($data, $file = "")
+function mail_sending_helper($data, $file = "", $is_full_path = "")
 {
 
     $status = NULL;
     $mail_log_data['status'] = $status;
     try {
+
         // if (env('APP_ENV') == 'prod') {
         if ($file) {
+            if (!$is_full_path)
+                $file = public_path() . "/" . STORAGE_PATH . ATTACHMENT_FILE_PATH . "/" . $file;
+
             Mail::send($data['template_name'], ['user_mail_data' => $data], function ($message) use ($data, $file) {
                 $email = (env('APP_ENV') == 'prod') ? $data['email'] : env('MAIL_TO');
                 $message->to($email)->subject(ucwords($data['subject']));

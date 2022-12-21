@@ -33,5 +33,6 @@ if (!defined('SCRIPT_VERSION')) {
     define("CODE_422","422");
 
     define('MAIL_TO', 'sajidjalal@gmaill.com');
-    
+    define("ATTACHMENT_FILE_PATH", 'uploads/mailAttachemnet');    
+    define("STORAGE_PATH",  "storage/");    
 }

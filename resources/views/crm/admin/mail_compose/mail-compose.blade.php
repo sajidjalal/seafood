@@ -18,8 +18,9 @@
                             enctype="multipart/form-data" class="signup" autocomplete="off">
                             @csrf
 
+                            <br>
                             <div class="row g-3">
-                                <div class="col-12">
+                                {{-- <div class="col-12">
                                     <label for="user_list">Select User</label>
                                     <select class="form-select js-choice_xxx" id="user_list" multiple="multiple"
                                         name="user_list[]" required="required">
@@ -28,17 +29,27 @@
                                             <option value="{{ $row->id }}">{{ $row->text }}</option>
                                         @endforeach
                                     </select>
+                                </div> --}}
+                                <div class="col-12">
+                                    <label for="user_list">Enter User List
+                                        <span style="color: red; font-size: 10px">Please enter email in comma separated
+                                            format</span>
+                                    </label>
+                                    <textarea class="form-select" name="user_list" id="user_list" cols="30" rows="5"></textarea>
                                 </div>
                                 <div class="col-12">
                                     <label for="user_list">Mail Subject</label>
-                                    <input type="text" class="form-control" name="subject" id="subject"
-                                        required>
+                                    <input type="text" class="form-control" name="subject" id="subject" required>
 
                                 </div>
 
                                 <div class="col-12">
                                     <label class="form-label " for="message">Write your Mail</label>
                                     <textarea id="mail_body" name="mail_body" class="form-control"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <input class="form-label " type="file" name="attachment_file" id="attachment_file">
                                 </div>
                             </div>
                             <br>
@@ -49,6 +60,7 @@
                                 </div>
                             </div>
                         </form>
+
                     </div>
 
                 </div>

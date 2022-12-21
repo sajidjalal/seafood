@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DocumentsDetailsModel;
 use App\Models\EmailLogModel;
 use App\Models\MasterCityModel;
 use App\Models\MasterStateModel;
@@ -254,20 +255,45 @@ class HomeController extends Controller
             if ($validator->fails()) {
                 $resposne_fields = $validator->errors();
             } else {
+                $user_info = Auth::user();
+                $documents_id = false;
+                if ($request->hasFile('attachment_file')) {
+                    $disk = env("MEDIA_DISK", 'public');
+                    $document_upload_result = uploadFile($request->file('attachment_file'), ATTACHMENT_FILE_PATH, $disk, ["jpg", "jpeg", "png", "pdf"]);
+                    if ($document_upload_result['error_code'] != 0) {
+                        return response()->json([
+                            'status' => true, 'message' => $document_upload_result['message']
+                        ], 422);
+                    }
+                    $org_file_name = $document_upload_result['org_file_name'];
+                    $file_name = $document_upload_result['file_name'];
 
+                    $document_details['name'] = $org_file_name;
+                    $document_details['path'] = $document_upload_result['path'];
+                    $document_details['created_by'] = $user_info->id;
+
+                    $documents_id = DocumentsDetailsModel::create($document_details)->id;
+                    $fields = [
+                        "documents_id"  =>  $documents_id,
+                    ];
+                }
                 $login_user = Auth::user();
-                foreach ($request->user_list as $key => $user_id) {
+                $user_list_array = explode(",", $request->user_list);
+                foreach ($user_list_array as $key => $email_to) {
 
                     $mail_data['mail_body'] = $request->mail_body;
-                    $user_data =  UsersModel::find($user_id);
+                    // $user_data =  UsersModel::find($user_id);
                     $fields = [
-                        "user_id"   => $user_id,
-                        "email_to"  => $user_data->email ?? "",
+                        "user_id"   => 0,
+                        "email_to"  => $email_to,
                         "data"      => json_encode($mail_data),
                         "template_name" => "emails.quout_mail_template",
                         "subject"   => $request->subject,
                     ];
 
+                    if ($documents_id) {
+                        $fields['documents_id'] = $documents_id;
+                    }
                     $fields['created_by'] = $login_user->id;
                     $fields['created_at'] =  date('Y-m-d H:m:s');
                     $user = EmailLogModel::create($fields);
