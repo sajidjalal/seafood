@@ -268,7 +268,7 @@ class HomeController extends Controller
                     $org_file_name = $document_upload_result['org_file_name'];
                     $file_name = $document_upload_result['file_name'];
 
-                    $document_details['name'] = $org_file_name;
+                    $document_details['name'] = $file_name;
                     $document_details['path'] = $document_upload_result['path'];
                     $document_details['created_by'] = $user_info->id;
 
