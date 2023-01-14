@@ -118,10 +118,10 @@
                             <a href="{{ route('contact-us') }}">Contact Us
                             </a>
                         </li>
-                        <li class=" {{ $current_menu == 'login' ? 'active' : '' }}">
+                        {{-- <li class=" {{ $current_menu == 'login' ? 'active' : '' }}">
                             <a class="hvr-clr" href="{{ route('login') }}">Login
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
