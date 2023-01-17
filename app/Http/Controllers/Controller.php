@@ -109,28 +109,68 @@ class Controller extends BaseController
         return view('new_look.welcome', $data);
     }
 
-    public function products()
+    public function products(Request $request)
     {
-        $data['page_title'] = 'Products list';
-        $data['product_master'] = ProductMasterModel::select(['id', 'name'])->where('status', 1)->get();
-        $data['dynamic_name'] = "product_categories_";
-        foreach ($data['product_master'] as $key => $value) {
-            $dynamic_name = "product_categories_" . $key;
-            $data['dynamic_category'][$dynamic_name] =  ProductCategoriesModel::select(['product_categories.*'])
+        try {
+            $post = $request->post();
+            Log::info('products : ');
+            Log::info($post);
+
+            $curl = curl_init();
+
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => API_LINK . 'api/get-product',
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_ENCODING => '',
+                CURLOPT_MAXREDIRS => 10,
+                CURLOPT_TIMEOUT => 0,
+                CURLOPT_FOLLOWLOCATION => true,
+                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                CURLOPT_CUSTOMREQUEST => 'GET',
+            ));
+
+            $resposne = curl_exec($curl);
+
+            curl_close($curl);
+            $resposne = json_decode($resposne);
+
+            $data = [];
+
+            $data['page_title'] = $resposne->data->page_title;
+            $data['product_master'] = $resposne->data->product_master;
+            $data['dynamic_name'] = "product_categories_";
+            $collection = collect($resposne->data->ProductCategoriesModel);
+            foreach ($data['product_master'] as $key => $value) {
+                $dynamic_name = "product_categories_" . $key;
+
+                $filtered = $collection->where('product_id', $value->id);
+                $data['dynamic_category'][$dynamic_name] =   $filtered->all();
+            }
+
+            $data['current_menu'] = "products";
+            return view('new_look.product_new', $data);
+        } catch (\Throwable $th) {
+            $data['page_title'] = 'Products list';
+            $data['product_master'] = ProductMasterModel::select(['id', 'name'])->where('status', 1)->get();
+            $data['dynamic_name'] = "product_categories_";
+            foreach ($data['product_master'] as $key => $value) {
+                $dynamic_name = "product_categories_" . $key;
+                $data['dynamic_category'][$dynamic_name] =  ProductCategoriesModel::select(['product_categories.*'])
+                    ->join('product_master', 'product_master.id', 'product_categories.product_id')
+                    ->where('product_master.status', 1)
+                    ->where('product_categories.status', 1)
+                    ->where('product_id', $value->id)->get();
+            }
+
+            $data['product_categories_crustaceans'] =  ProductCategoriesModel::select(['product_categories.*'])
                 ->join('product_master', 'product_master.id', 'product_categories.product_id')
                 ->where('product_master.status', 1)
-                ->where('product_categories.status', 1)
-                ->where('product_id', $value->id)->get();
+                ->where('product_id', 4)->get();
+
+            $data['current_menu'] = "products";
+
+            return view('new_look.product_new', $data);
         }
-
-        $data['product_categories_crustaceans'] =  ProductCategoriesModel::select(['product_categories.*'])
-            ->join('product_master', 'product_master.id', 'product_categories.product_id')
-            ->where('product_master.status', 1)
-            ->where('product_id', 4)->get();
-
-        $data['current_menu'] = "products";
-
-        return view('new_look.product_new', $data);
     }
 
     public function about_us()
@@ -341,10 +381,10 @@ class Controller extends BaseController
             $documents_id           =  $row['documents_id'] ? $row['documents_id'] : false;
             $mail_data['mail_body'] =  $mail_body['mail_body'] ?? "";
 
-            
+
             if ($documents_id) {
                 mail_sending_helper($mail_data, $row['document_details']->name, false);
-            }else{
+            } else {
                 mail_sending_helper($mail_data);
             }
             // return view($row['template_name'], $mail_data);
