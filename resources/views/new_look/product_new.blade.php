@@ -21,7 +21,7 @@
                     </ul>
                     <!-- resp-tabs-container -->
 
-                
+
 
                     <div class="resp-tabs-container">
 
@@ -38,7 +38,8 @@
                                         @foreach ($dynamic_category[$dynamic_product_categories] as $key_inner => $value)
                                             <div class="pro-inn-wrp">
                                                 <div class="pro-img">
-                                                    <img src="{{ asset($value->path) }}"alt="">
+                                                    <img
+                                                        src="{{ asset(API_LINK . 'storage/uploads/categoryProductImages/' . $value->path) }}"alt="">
                                                 </div>
                                                 <div class="pro-cent-wrp">
                                                     <div class="pro-cnt">
